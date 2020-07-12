@@ -2,13 +2,13 @@
 
 public class CameraMovement : MonoBehaviour
 {
-    public float movementSpeed = 0.005f;
+    public float movementSpeed = 5f;
 
     // Update is called once per frame
     void Update()
     {
         Vector3 newPosition = transform.position;
-        newPosition.x += movementSpeed;
+        newPosition.x += movementSpeed * Time.deltaTime;
         transform.position = newPosition;
     }
 }
