@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8201509591170822534}
   - component: {fileID: 8201509591170822533}
   - component: {fileID: -3412584792903828285}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Metaball2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
