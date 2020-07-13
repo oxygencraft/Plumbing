@@ -16,11 +16,15 @@ public class MetaballSpawner : MonoBehaviour
         }
         for (int i = 0; i < count; i++)
         {
+            GameObject metaball;
             if (metaballParent != null)
             {
-                Instantiate(metaballPrefab, transform.position, Quaternion.identity, metaballParent);
+                metaball = Instantiate(metaballPrefab, transform.position, Quaternion.identity, metaballParent);
+                metaball.transform.SetParent(metaballParent);
+                //metaball.hideFlags = HideFlags.HideInHierarchy;
             }
-            Instantiate(metaballPrefab, transform.position, Quaternion.identity);
+            metaball = Instantiate(metaballPrefab, transform.position, Quaternion.identity);
+            //metaball.hideFlags = HideFlags.HideInHierarchy;
         }
     }
 }
