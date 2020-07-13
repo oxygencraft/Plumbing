@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [RequireComponent(typeof(CircleCollider2D))]
 public class Metaball2D : MonoBehaviour
@@ -9,6 +10,14 @@ public class Metaball2D : MonoBehaviour
     {
         collider = GetComponent<CircleCollider2D>();
         MetaballSystem2D.Add(this);
+        Transform parent = null;
+        try
+        {
+            parent = FindObjectOfType<GameManager>().metaballParent;
+        }
+        catch (Exception) { }
+        if (parent != null)
+            transform.SetParent(parent);
     }
 
     public float GetRadius()

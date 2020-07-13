@@ -7,17 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public GameObject loseUI;
     public CameraMovement movement;
-    /*public static GameManager instance;
-    
-    void Awake()
-    {
-        if (instance != null)
-        {
-            Destroy(this);
-            return;
-        }
-        instance = this;
-    }*/
+    public Transform metaballParent;
 
     public void LoseGame()
     {
