@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Runtime.CompilerServices;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -46,5 +46,13 @@ public class MetaballSystem2D
     public static void Remove(Metaball2D metaball)
     {
         metaballs.Remove(metaball);
+        if (metaballs.Count == 0)
+        {
+            try
+            {
+                MonoBehaviour.FindObjectOfType<GameManager>().LoseGame();
+            }
+            catch (NullReferenceException) { }
+        }
     }
 }

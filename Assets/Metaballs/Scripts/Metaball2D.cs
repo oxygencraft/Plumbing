@@ -21,9 +21,5 @@ public class Metaball2D : MonoBehaviour
     private void OnDestroy()
     {
         MetaballSystem2D.Remove(this);
-        if (MetaballSystem2D.Get().Count == 0)
-        {
-            Debug.Log("GAME OVER!");
-        }
     }
 }
