@@ -8,7 +8,7 @@ public class CameraMovement : MonoBehaviour
     void Update()
     {
         Vector3 newPosition = transform.position;
-        newPosition.x += movementSpeed;
+        newPosition.x += movementSpeed * Time.deltaTime;
         transform.position = newPosition;
     }
 }
