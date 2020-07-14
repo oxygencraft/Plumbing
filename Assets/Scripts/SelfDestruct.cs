@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Nudger : MonoBehaviour
+public class SelfDestruct : MonoBehaviour
 {
+    public float timeUntilSelfDestruct = 1f;
+
     void Start()
     {
-        Invoke("DestroyObject", 1f);
+        Invoke("DestroyObject", timeUntilSelfDestruct);
     }
 
     void DestroyObject()
