@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject loseUI;
-    public CameraMovement movement;
+    public TransformMovement movement;
     public Transform metaballParent;
 
     public void LoseGame()

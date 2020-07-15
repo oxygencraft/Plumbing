@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class CameraMovement : MonoBehaviour
+public class TransformMovement : MonoBehaviour
 {
     public float movementSpeed = 5f;
 

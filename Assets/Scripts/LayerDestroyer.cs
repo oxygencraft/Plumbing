@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MetaballDestroyer : MonoBehaviour
+public class LayerDestroyer : MonoBehaviour
 {
+    public int layer;
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject collider = collision.gameObject;
-        if (collider.layer == 8)
+        if (collider.layer == layer)
         {
             Destroy(collider);
         }
