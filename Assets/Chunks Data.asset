@@ -50,7 +50,7 @@ MonoBehaviour:
   - from: Blue
     to: Dark Blue
     chunkGroup:
-      name: 
+      name: Blue-Dark Blue
       chunks:
       - sprite: {fileID: 21300000, guid: a0bad53dc88daed4487333d7006a80c5, type: 3}
         positionIncrement: 10
@@ -61,7 +61,7 @@ MonoBehaviour:
   - from: Blue
     to: Purple
     chunkGroup:
-      name: 
+      name: Blue-Purple
       chunks:
       - sprite: {fileID: 21300000, guid: 2a446fb95baa1554f97fb4552aef925b, type: 3}
         positionIncrement: 10
@@ -72,7 +72,7 @@ MonoBehaviour:
   - from: Dark Blue
     to: Blue
     chunkGroup:
-      name: 
+      name: Dark Blue-Blue
       chunks:
       - sprite: {fileID: 21300000, guid: b829b78c31784ae4ba1d59d17a9e463b, type: 3}
         positionIncrement: 10
@@ -83,7 +83,7 @@ MonoBehaviour:
   - from: Dark Blue
     to: Purple
     chunkGroup:
-      name: 
+      name: Dark Blue-Purple
       chunks:
       - sprite: {fileID: 21300000, guid: b14ae2a969f64ca4aa5203b234e1b93c, type: 3}
         positionIncrement: 10
@@ -94,7 +94,7 @@ MonoBehaviour:
   - from: Purple
     to: Blue
     chunkGroup:
-      name: 
+      name: Purple-Blue
       chunks:
       - sprite: {fileID: 21300000, guid: 61be032d0ee1b37408543f6442e60c02, type: 3}
         positionIncrement: 10
@@ -105,7 +105,7 @@ MonoBehaviour:
   - from: Purple
     to: Dark Blue
     chunkGroup:
-      name: 
+      name: Purple-Dark Blue
       chunks:
       - sprite: {fileID: 21300000, guid: aa822397c29446a459aefb1947886742, type: 3}
         positionIncrement: 10
@@ -116,7 +116,7 @@ MonoBehaviour:
   - from: Blue
     to: Blue
     chunkGroup:
-      name: 
+      name: Blue-Blue
       chunks:
       - sprite: {fileID: 21300000, guid: 3ac44f40697994342ab63c7d73066788, type: 3}
         positionIncrement: 10
@@ -124,7 +124,7 @@ MonoBehaviour:
   - from: Dark Blue
     to: Dark Blue
     chunkGroup:
-      name: 
+      name: Dark Blue-Dark Blue
       chunks:
       - sprite: {fileID: 21300000, guid: 966250854f350334c9bb3b1702bd9e7b, type: 3}
         positionIncrement: 10
@@ -132,7 +132,7 @@ MonoBehaviour:
   - from: Purple
     to: Purple
     chunkGroup:
-      name: 
+      name: Purple-Purple
       chunks:
       - sprite: {fileID: 21300000, guid: 82cc1336cca63cd43af2f341abcbbbf5, type: 3}
         positionIncrement: 10

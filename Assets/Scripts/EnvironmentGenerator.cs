@@ -8,6 +8,7 @@ public class EnvironmentGenerator : MonoBehaviour
     private Vector3 nextLocation;
     private ChunkGroup currentChunkGroup;
     private ChunkGroup nextChunkGroup;
+    private ChunkGroup nextNonConnectorGroup;
     private Chunk nextChunk;
     private int chunkGroupIndex;
     private bool isNextGroupConnector = false;
@@ -37,12 +38,12 @@ public class EnvironmentGenerator : MonoBehaviour
 
     private void CreateNextChunk(bool moveObject = false)
     {
-        GameObject chunk = new GameObject("Chunk");
+        GameObject chunk = new GameObject("Chunk " + currentChunkGroup.name);
         chunk.transform.position = nextLocation;
         var spriteRenderer = chunk.AddComponent<SpriteRenderer>();
         spriteRenderer.sprite = nextChunk.sprite;
-        var selfDestruct = chunk.AddComponent<SelfDestruct>();
-        selfDestruct.timeUntilSelfDestruct = nextChunk.timeUntilSelfDestruct;
+        //var selfDestruct = chunk.AddComponent<SelfDestruct>();
+        //selfDestruct.timeUntilSelfDestruct = nextChunk.timeUntilSelfDestruct;
         chunk.transform.SetParent(parent);
         nextLocation.x += nextChunk.positionIncrement;
         if (moveObject)
@@ -69,8 +70,21 @@ public class EnvironmentGenerator : MonoBehaviour
     private void GetNextChunkGroup()
     {
         currentChunkGroup = nextChunkGroup;
-        ChunkGroup nextGroup = chunks.chunkGroups[Random.Range(0, chunks.chunkGroups.Count)];
-        nextChunkGroup = isNextGroupConnector ? chunks.GetChunkConnectorGroup(nextChunkGroup, nextGroup) : nextGroup;
+        if (nextNonConnectorGroup == null)
+        {
+            var nextGroup = chunks.chunkGroups[Random.Range(0, chunks.chunkGroups.Count)];
+            nextNonConnectorGroup = nextGroup;
+        }
+        if (isNextGroupConnector)
+        {
+            var nextGroup = chunks.chunkGroups[Random.Range(0, chunks.chunkGroups.Count)];
+            nextNonConnectorGroup = nextGroup;
+            nextChunkGroup = chunks.GetChunkConnectorGroup(nextChunkGroup, nextGroup);
+        }
+        else
+        {
+            nextChunkGroup = nextNonConnectorGroup;
+        }
 
         isNextGroupConnector = !isNextGroupConnector;
     }
