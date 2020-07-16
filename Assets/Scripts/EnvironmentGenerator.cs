@@ -29,10 +29,9 @@ public class EnvironmentGenerator : MonoBehaviour
             CreateNextChunk(true);
         }
     }
-
     void Update()
     {
-        if (Vector3.Distance(transform.position, nextLocation) < 6)
+        if (Vector3.Distance(transform.position, nextLocation) < 11)
             CreateNextChunk();
     }
 
@@ -42,8 +41,8 @@ public class EnvironmentGenerator : MonoBehaviour
         chunk.transform.position = nextLocation;
         var spriteRenderer = chunk.AddComponent<SpriteRenderer>();
         spriteRenderer.sprite = nextChunk.sprite;
-        //var selfDestruct = chunk.AddComponent<SelfDestruct>();
-        //selfDestruct.timeUntilSelfDestruct = nextChunk.timeUntilSelfDestruct;
+        var selfDestruct = chunk.AddComponent<SelfDestruct>();
+        selfDestruct.timeUntilSelfDestruct = nextChunk.timeUntilSelfDestruct;
         chunk.transform.SetParent(parent);
         nextLocation.x += nextChunk.positionIncrement;
         if (moveObject)
@@ -53,8 +52,6 @@ public class EnvironmentGenerator : MonoBehaviour
             transform.position = position;
         }
 
-        //Debug.Log(currentChunkGroup);
-        //Debug.Log(currentChunkGroup.chunks);
         if (currentChunkGroup.chunks.Count == ++chunkGroupIndex)
         {
             chunkGroupIndex = 0;
@@ -78,6 +75,8 @@ public class EnvironmentGenerator : MonoBehaviour
         if (isNextGroupConnector)
         {
             var nextGroup = chunks.chunkGroups[Random.Range(0, chunks.chunkGroups.Count)];
+            if (nextGroup.name == nextChunkGroup.name)
+                return;
             nextNonConnectorGroup = nextGroup;
             nextChunkGroup = chunks.GetChunkConnectorGroup(nextChunkGroup, nextGroup);
         }

@@ -113,27 +113,3 @@ MonoBehaviour:
       - sprite: {fileID: 21300000, guid: aa822397c29446a459aefb1947886742, type: 3}
         positionIncrement: 10
         timeUntilSelfDestruct: 10
-  - from: Blue
-    to: Blue
-    chunkGroup:
-      name: Blue-Blue
-      chunks:
-      - sprite: {fileID: 21300000, guid: 3ac44f40697994342ab63c7d73066788, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
-  - from: Dark Blue
-    to: Dark Blue
-    chunkGroup:
-      name: Dark Blue-Dark Blue
-      chunks:
-      - sprite: {fileID: 21300000, guid: 966250854f350334c9bb3b1702bd9e7b, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
-  - from: Purple
-    to: Purple
-    chunkGroup:
-      name: Purple-Purple
-      chunks:
-      - sprite: {fileID: 21300000, guid: 82cc1336cca63cd43af2f341abcbbbf5, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
