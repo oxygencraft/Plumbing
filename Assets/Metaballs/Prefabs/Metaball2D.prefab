@@ -10,9 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8201509591170822532}
   - component: {fileID: 8201509591170822535}
+  - component: {fileID: 3093272482269182612}
   - component: {fileID: 8201509591170822534}
   - component: {fileID: 8201509591170822533}
   - component: {fileID: -3412584792903828285}
+  - component: {fileID: -4179823588330297998}
+  - component: {fileID: -6474005765599266656}
   m_Layer: 8
   m_Name: Metaball2D
   m_TagString: Untagged
@@ -55,6 +58,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3093272482269182612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8201509591170822552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dab3cd89fd3d7fc4893210a9efa0fa6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody: {fileID: 8201509591170822535}
+  maxVelocity: {x: 5.75, y: 0}
+  setToVelocity: {x: 5.75, y: 0}
+  maxAngularVelocity: 55
+  setToAngularVelocity: 10
+  limitXVelocity: 1
+  limitYVelocity: 0
+  limitAngularVelocity: 1
 --- !u!58 &8201509591170822534
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -66,7 +89,7 @@ CircleCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -83,6 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcc57d1ea83df2342839e1153bdc0b26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collider: {fileID: 8201509591170822534}
 --- !u!212 &-3412584792903828285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -133,3 +157,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &-4179823588330297998
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8201509591170822552}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2
+--- !u!250 &-6474005765599266656
+PointEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8201509591170822552}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceMagnitude: -20
+  m_ForceVariation: 0
+  m_DistanceScale: 16.62
+  m_ForceSource: 0
+  m_ForceTarget: 0
+  m_ForceMode: 2
+  m_Drag: 0
+  m_AngularDrag: 0

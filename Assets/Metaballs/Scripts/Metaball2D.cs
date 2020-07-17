@@ -4,7 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(CircleCollider2D))]
 public class Metaball2D : MonoBehaviour
 {
-    private new CircleCollider2D collider;
+    public new CircleCollider2D collider;
 
     private void Awake()
     {

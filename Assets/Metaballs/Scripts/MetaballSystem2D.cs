@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
 public class MetaballSystem2D
 {
-    private static List<Metaball2D> metaballs;
+    private static MetaballManager _metaballManager;
+    public MetaballManager metaballManager;
     private static MetaballSystem2D instance;
 
     [Range(0f, 1f), Tooltip("Outline size.")]
@@ -21,7 +21,7 @@ public class MetaballSystem2D
 
     private MetaballSystem2D()
     {
-        metaballs = new List<Metaball2D>();
+        
     }
 
     public static MetaballSystem2D GetInstance()
@@ -35,24 +35,16 @@ public class MetaballSystem2D
 
     public static void Add(Metaball2D metaball)
     {
-        metaballs.Add(metaball);
+        MetaballManager.AddMetaball(metaball);
     }
 
     public static List<Metaball2D> Get()
     {
-        return metaballs;
+        return MetaballManager.GetMetaballs();
     }
 
     public static void Remove(Metaball2D metaball)
     {
-        metaballs.Remove(metaball);
-        if (metaballs.Count == 0)
-        {
-            try
-            {
-                MonoBehaviour.FindObjectOfType<GameManager>().LoseGame();
-            }
-            catch (NullReferenceException) { }
-        }
+        MetaballManager.RemoveMetaball(metaball);
     }
 }
