@@ -12,153 +12,97 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ffd1b54c40e4b409f5a175520f252e, type: 3}
   m_Name: Chunks Data
   m_EditorClassIdentifier: 
+  allChunkMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   chunkGroups:
   - name: Desert
     chunks:
-    - sprite: {fileID: 3286163911610860551, guid: 7bc5d46d3f8de2d44b863bcb9f5ce32e,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: 7a5c8ba1ea2da1645a62d4e5f2c7a1a7, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 3286163911610860551, guid: 2308664058f7a2f498e8729739266936,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: b03635a1b58c2394589db0fd8515fd71, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 3286163911610860551, guid: abb99396b21b43d46ac64235b9a5a020,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: d2d49fe9e2d5c084094b330ec24924a2, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 3286163911610860551, guid: 931863aca6c91a941b82cbd19a1d1c35,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: 03889cf3f7cd67f429a1d8b058ddce1b, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
   - name: Forest
     chunks:
-    - sprite: {fileID: 3286163911610860551, guid: 3617d33855b6ea24fa50e299512a1888,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: 206ea8acd0678c4489cfa6cf4edc3c61, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 3286163911610860551, guid: fc7f810a6ce4c3f4f9088bbe51d9e289,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: bbe9ff37cd273c74ca1398077bfa1d99, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 3286163911610860551, guid: 0d4371cc49ed5094a838ebf3f20b4b7b,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: 5f05df3039428f54f90a4b87f73d9d2d, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 3286163911610860551, guid: b047c5ee013fb814eb98687f7829bdaa,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: 1c1d61842e9cd4942bd7dcf024e60e58, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
   - name: Grasslands
     chunks:
-    - sprite: {fileID: 3286163911610860551, guid: c2193792f8ae61e4dba30478337b2ce1,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: 20949a62c3ba7dc4091f8cffa9629bc0, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 3286163911610860551, guid: 8ea0f95266ddb15469a003877faa90a8,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: ec44d2e9c858b324995a3e608ac3fc23, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 3286163911610860551, guid: f1987c471c399734eb8626881ee6a5ac,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: aca22c0c04204b14c8e59e2ebdb10e52, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 3286163911610860551, guid: 3252d1b77edae0040b9b7542cb5b5e5b,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: 0d74fb77b80b4204598f7f427aabe3dd, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 0
   - name: Taiga
     chunks:
-    - sprite: {fileID: 3286163911610860551, guid: bf9aaa706849e5d4a9d2f96e9f35c796,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: 94d71aab25c5b2c47af966a87cc314ea, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 3286163911610860551, guid: c97701f54004cb342a08ba0a398212c6,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: 6798ae591ab8c6048909a9754801ee89, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 3286163911610860551, guid: b9e3574437805ef41a9b3c6ebc3cce42,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: 414d787dc8da2b94aa80081ce31933c3, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
   - name: Tundra
     chunks:
-    - sprite: {fileID: 3286163911610860551, guid: e9061a7e0cf5c02449b1361f6155e43f,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: 6678f373b401b9f449d9efa213a75402, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 3286163911610860551, guid: 5ecc01257b329ef4cb5dfc8bd9b573ad,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: e217c33c6540ee54495c8f990e74f68a, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 3286163911610860551, guid: e5a7f07704c378449bd1084037a2ceed,
-        type: 3}
+    - sprite: {fileID: 21300000, guid: 33b84ea825a874c4893094bcf59ebaf1, type: 3}
+      material: {fileID: 0}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
   chunkConnectorGroups:
-  - from: Blue
-    to: Dark Blue
+  - from: Desert
+    to: Forest
     chunkGroup:
       name: Blue-Dark Blue
       chunks:
-      - sprite: {fileID: 21300000, guid: a0bad53dc88daed4487333d7006a80c5, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
-      - sprite: {fileID: 21300000, guid: a0bad53dc88daed4487333d7006a80c5, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
-  - from: Blue
-    to: Purple
-    chunkGroup:
-      name: Blue-Purple
-      chunks:
-      - sprite: {fileID: 21300000, guid: 2a446fb95baa1554f97fb4552aef925b, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
-      - sprite: {fileID: 21300000, guid: 2a446fb95baa1554f97fb4552aef925b, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
-  - from: Dark Blue
-    to: Blue
-    chunkGroup:
-      name: Dark Blue-Blue
-      chunks:
-      - sprite: {fileID: 21300000, guid: b829b78c31784ae4ba1d59d17a9e463b, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
-      - sprite: {fileID: 21300000, guid: b829b78c31784ae4ba1d59d17a9e463b, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
-  - from: Dark Blue
-    to: Purple
-    chunkGroup:
-      name: Dark Blue-Purple
-      chunks:
-      - sprite: {fileID: 21300000, guid: b14ae2a969f64ca4aa5203b234e1b93c, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
-      - sprite: {fileID: 21300000, guid: b14ae2a969f64ca4aa5203b234e1b93c, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
-  - from: Purple
-    to: Blue
-    chunkGroup:
-      name: Purple-Blue
-      chunks:
-      - sprite: {fileID: 21300000, guid: 61be032d0ee1b37408543f6442e60c02, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
-      - sprite: {fileID: 21300000, guid: 61be032d0ee1b37408543f6442e60c02, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
-  - from: Purple
-    to: Dark Blue
-    chunkGroup:
-      name: Purple-Dark Blue
-      chunks:
-      - sprite: {fileID: 21300000, guid: aa822397c29446a459aefb1947886742, type: 3}
-        positionIncrement: 10
-        timeUntilSelfDestruct: 10
-      - sprite: {fileID: 21300000, guid: aa822397c29446a459aefb1947886742, type: 3}
+      - sprite: {fileID: 21300000, guid: 16f99f32dabf8a64c8bae2aad133404b, type: 3}
+        material: {fileID: 0}
         positionIncrement: 10
         timeUntilSelfDestruct: 10
