@@ -41,6 +41,13 @@ public class EnvironmentGenerator : MonoBehaviour
         chunk.transform.position = nextLocation;
         var spriteRenderer = chunk.AddComponent<SpriteRenderer>();
         spriteRenderer.sprite = nextChunk.sprite;
+        Material spriteMaterial = null;
+        if (chunks.allChunkMaterial != null)
+            spriteMaterial = chunks.allChunkMaterial;
+        if (nextChunk.material != null)
+            spriteMaterial = nextChunk.material;
+        if (spriteMaterial != null)
+            spriteRenderer.material = spriteMaterial;
         var selfDestruct = chunk.AddComponent<SelfDestruct>();
         selfDestruct.timeUntilSelfDestruct = nextChunk.timeUntilSelfDestruct;
         chunk.transform.SetParent(parent);

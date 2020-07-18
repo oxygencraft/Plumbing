@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Chunks Data", menuName = "Chunks Data")]
 public class ChunksData : ScriptableObject
 {
+    public Material allChunkMaterial;
     public List<ChunkGroup> chunkGroups;
     public List<ChunkConnectorGroup> chunkConnectorGroups;
 
@@ -53,6 +54,7 @@ public class ChunkConnectorGroup
 public class Chunk
 {
     public Sprite sprite;
+    public Material material;
     public float positionIncrement;
     public float timeUntilSelfDestruct;
 }
