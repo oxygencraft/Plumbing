@@ -13,37 +13,86 @@ MonoBehaviour:
   m_Name: Chunks Data
   m_EditorClassIdentifier: 
   chunkGroups:
-  - name: Blue
+  - name: Desert
     chunks:
-    - sprite: {fileID: 21300000, guid: 3ac44f40697994342ab63c7d73066788, type: 3}
+    - sprite: {fileID: 3286163911610860551, guid: 7bc5d46d3f8de2d44b863bcb9f5ce32e,
+        type: 3}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 21300000, guid: 3ac44f40697994342ab63c7d73066788, type: 3}
+    - sprite: {fileID: 3286163911610860551, guid: 2308664058f7a2f498e8729739266936,
+        type: 3}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 21300000, guid: 3ac44f40697994342ab63c7d73066788, type: 3}
+    - sprite: {fileID: 3286163911610860551, guid: abb99396b21b43d46ac64235b9a5a020,
+        type: 3}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-  - name: Dark Blue
+    - sprite: {fileID: 3286163911610860551, guid: 931863aca6c91a941b82cbd19a1d1c35,
+        type: 3}
+      positionIncrement: 10
+      timeUntilSelfDestruct: 10
+  - name: Forest
     chunks:
-    - sprite: {fileID: 21300000, guid: 966250854f350334c9bb3b1702bd9e7b, type: 3}
+    - sprite: {fileID: 3286163911610860551, guid: 3617d33855b6ea24fa50e299512a1888,
+        type: 3}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 21300000, guid: 966250854f350334c9bb3b1702bd9e7b, type: 3}
+    - sprite: {fileID: 3286163911610860551, guid: fc7f810a6ce4c3f4f9088bbe51d9e289,
+        type: 3}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 21300000, guid: 966250854f350334c9bb3b1702bd9e7b, type: 3}
+    - sprite: {fileID: 3286163911610860551, guid: 0d4371cc49ed5094a838ebf3f20b4b7b,
+        type: 3}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-  - name: Purple
+    - sprite: {fileID: 3286163911610860551, guid: b047c5ee013fb814eb98687f7829bdaa,
+        type: 3}
+      positionIncrement: 10
+      timeUntilSelfDestruct: 10
+  - name: Grasslands
     chunks:
-    - sprite: {fileID: 21300000, guid: 82cc1336cca63cd43af2f341abcbbbf5, type: 3}
+    - sprite: {fileID: 3286163911610860551, guid: c2193792f8ae61e4dba30478337b2ce1,
+        type: 3}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 21300000, guid: 82cc1336cca63cd43af2f341abcbbbf5, type: 3}
+    - sprite: {fileID: 3286163911610860551, guid: 8ea0f95266ddb15469a003877faa90a8,
+        type: 3}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
-    - sprite: {fileID: 21300000, guid: 82cc1336cca63cd43af2f341abcbbbf5, type: 3}
+    - sprite: {fileID: 3286163911610860551, guid: f1987c471c399734eb8626881ee6a5ac,
+        type: 3}
+      positionIncrement: 10
+      timeUntilSelfDestruct: 10
+    - sprite: {fileID: 3286163911610860551, guid: 3252d1b77edae0040b9b7542cb5b5e5b,
+        type: 3}
+      positionIncrement: 10
+      timeUntilSelfDestruct: 0
+  - name: Taiga
+    chunks:
+    - sprite: {fileID: 3286163911610860551, guid: bf9aaa706849e5d4a9d2f96e9f35c796,
+        type: 3}
+      positionIncrement: 10
+      timeUntilSelfDestruct: 10
+    - sprite: {fileID: 3286163911610860551, guid: c97701f54004cb342a08ba0a398212c6,
+        type: 3}
+      positionIncrement: 10
+      timeUntilSelfDestruct: 10
+    - sprite: {fileID: 3286163911610860551, guid: b9e3574437805ef41a9b3c6ebc3cce42,
+        type: 3}
+      positionIncrement: 10
+      timeUntilSelfDestruct: 10
+  - name: Tundra
+    chunks:
+    - sprite: {fileID: 3286163911610860551, guid: e9061a7e0cf5c02449b1361f6155e43f,
+        type: 3}
+      positionIncrement: 10
+      timeUntilSelfDestruct: 10
+    - sprite: {fileID: 3286163911610860551, guid: 5ecc01257b329ef4cb5dfc8bd9b573ad,
+        type: 3}
+      positionIncrement: 10
+      timeUntilSelfDestruct: 10
+    - sprite: {fileID: 3286163911610860551, guid: e5a7f07704c378449bd1084037a2ceed,
+        type: 3}
       positionIncrement: 10
       timeUntilSelfDestruct: 10
   chunkConnectorGroups:
