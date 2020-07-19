@@ -4,6 +4,7 @@ public class EnvironmentGenerator : MonoBehaviour
 {
     public Transform parent;
     public ChunksData chunks;
+    public int layer = 9;
 
     private Vector3 nextLocation;
     private ChunkGroup currentChunkGroup;
@@ -37,9 +38,11 @@ public class EnvironmentGenerator : MonoBehaviour
 
     private void CreateNextChunk(bool moveObject = false)
     {
-        GameObject chunk = new GameObject("Chunk " + currentChunkGroup.name);
+        //GameObject chunk = new GameObject("Chunk " + currentChunkGroup.name);
+        GameObject chunk = Instantiate(nextChunk.prefab);
+        chunk.layer = layer;
         chunk.transform.position = nextLocation;
-        var spriteRenderer = chunk.AddComponent<SpriteRenderer>();
+        /*var spriteRenderer = chunk.AddComponent<SpriteRenderer>();
         spriteRenderer.sprite = nextChunk.sprite;
         Material spriteMaterial = null;
         if (chunks.allChunkMaterial != null)
@@ -50,6 +53,7 @@ public class EnvironmentGenerator : MonoBehaviour
             spriteRenderer.material = spriteMaterial;
         var selfDestruct = chunk.AddComponent<SelfDestruct>();
         selfDestruct.timeUntilSelfDestruct = nextChunk.timeUntilSelfDestruct;
+        */
         chunk.transform.SetParent(parent);
         nextLocation.x += nextChunk.positionIncrement;
         if (moveObject)

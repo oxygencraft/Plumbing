@@ -16,264 +16,226 @@ MonoBehaviour:
   chunkGroups:
   - name: Desert
     chunks:
-    - sprite: {fileID: 21300000, guid: 7a5c8ba1ea2da1645a62d4e5f2c7a1a7, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: 489c4b67f1062a54ea7abf0f7bbf09d7,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
-    - sprite: {fileID: 21300000, guid: b03635a1b58c2394589db0fd8515fd71, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: 61282522afc73b047883be58c513bd89,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
-    - sprite: {fileID: 21300000, guid: d2d49fe9e2d5c084094b330ec24924a2, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: f7530a6ca07a7d04db3db3c58cf834cc,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
-    - sprite: {fileID: 21300000, guid: 03889cf3f7cd67f429a1d8b058ddce1b, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: cde0239ba4a36264d971544f9fffe41c,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
   - name: Forest
     chunks:
-    - sprite: {fileID: 21300000, guid: 206ea8acd0678c4489cfa6cf4edc3c61, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: ee85554f8ed25ca46ae3088db04b2e97,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
-    - sprite: {fileID: 21300000, guid: bbe9ff37cd273c74ca1398077bfa1d99, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: 6d122e9464500c742899756a65f3a3bd,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
-    - sprite: {fileID: 21300000, guid: 5f05df3039428f54f90a4b87f73d9d2d, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: 88a98e745f2d0c743b1dfd7d2fb5bbaa,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
-    - sprite: {fileID: 21300000, guid: 1c1d61842e9cd4942bd7dcf024e60e58, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: ef2d4051ac8efdf468f6577fc7165e65,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
   - name: Grasslands
     chunks:
-    - sprite: {fileID: 21300000, guid: 20949a62c3ba7dc4091f8cffa9629bc0, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: d1c7d5ba2b7b3c94897ea54070f34295,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
-    - sprite: {fileID: 21300000, guid: ec44d2e9c858b324995a3e608ac3fc23, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: 2a38bc62da6b4574b9b77d7e3235e700,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
-    - sprite: {fileID: 21300000, guid: aca22c0c04204b14c8e59e2ebdb10e52, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: 442a583edd014274e85a7bbf68116e48,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
-    - sprite: {fileID: 21300000, guid: 0d74fb77b80b4204598f7f427aabe3dd, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: e88ee39052b7bc14383bcae98daf5735,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
   - name: Taiga
     chunks:
-    - sprite: {fileID: 21300000, guid: 94d71aab25c5b2c47af966a87cc314ea, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: aaebc42ca7420ea488fdf9919ba95e33,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
-    - sprite: {fileID: 21300000, guid: 6798ae591ab8c6048909a9754801ee89, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: 822d4f8f9ea8a6f408189ec8c95d212d,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
-    - sprite: {fileID: 21300000, guid: 414d787dc8da2b94aa80081ce31933c3, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: 193b17aba85ad0c468ed04f004285b65,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
   - name: Tundra
     chunks:
-    - sprite: {fileID: 21300000, guid: 6678f373b401b9f449d9efa213a75402, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: 431eccb29a7cba844b48484001d9c9dd,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
-    - sprite: {fileID: 21300000, guid: e217c33c6540ee54495c8f990e74f68a, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: 0cfe1f73f43b9cd42a880b2e62a44c1c,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
-    - sprite: {fileID: 21300000, guid: 33b84ea825a874c4893094bcf59ebaf1, type: 3}
-      material: {fileID: 0}
+    - prefab: {fileID: 5945828012477581777, guid: e9e4dbc760a593a49ada12593c7926e8,
+        type: 3}
       positionIncrement: 10
-      timeUntilSelfDestruct: 15
   chunkConnectorGroups:
   - from: Desert
     to: Tundra
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 8e1eed2b53e85844ca4aa043c7bb6d7a, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: a08c471960155274c87c1ac6a603116c,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Desert
     to: Forest
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 16f99f32dabf8a64c8bae2aad133404b, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: 36cdb816dc27c74498880e58db9270f9,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Desert
     to: Taiga
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: beeb0b79cd5004442bc61798755cf674, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: 89a7852b0ca58aa41947b6f3cad5ac18,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Desert
     to: Grasslands
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: ff4923ecf71673d46adb252f6de70fd4, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: 312941e319cb4044881e6cbad53dde48,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Tundra
     to: Desert
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 8a105bc20aa28cf459afacec62fbad41, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: 8898aca7eee42e2488b6e6409ba594e5,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Tundra
     to: Taiga
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 6cc5c940cd378554baec7b82e32e3263, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: e541ea926e4d4a64aa2b5195a11e3562,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Tundra
     to: Forest
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 178704e8232db0c4dbb40ea7edb69a65, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: a12b90b5eba4fac4784b8d5aee31514a,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Tundra
     to: Grasslands
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 6208fdbb5f33ba24b9e7e7eefcdddc36, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: 312e94106aa8bad46b6c7a4546844886,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Taiga
     to: Desert
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 777ebe2884aa7ab49bcc54fbbf979a46, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: 213cae1247927de429691287565c735f,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Taiga
     to: Tundra
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 55b576012a569774e94fb7b4a2eb6c0c, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: c904166e78b83194c877bb2e86356557,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Taiga
     to: Forest
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 57317564bc6c9af4db15bc70e062c19b, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: 26d1c814d29225a41a10f7d037328570,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Taiga
     to: Grasslands
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: bd6f7294943e0714fb362ab4a57a5baf, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: ad26d25901f89e04b85f91a889799b71,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Forest
     to: Desert
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: f167b2e7375916d4a97e4da14dca23aa, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: 88439fc80b9bda44b966240ca247d224,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Forest
     to: Tundra
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: e91b5cb9dafc3534a84c59c3b76952cb, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: f7cebb592d0df6f478aaff99c8cf475b,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Forest
     to: Taiga
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 621ae8f4494f2694fa1b5547a1790312, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: e100f78b53b939040937ef2dd8558ca3,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Forest
     to: Grasslands
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 172eea3a73603ef41b6da4ba23517009, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: 39894ee070293a846b258ece40599525,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Grasslands
     to: Desert
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 8c042723e7b1ffd4ba0388c1b483f50a, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: 5a856233ef243b04f9bbfd3d81c8cc21,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Grasslands
     to: Tundra
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 0e5e276892a7a6e4ba41e0f7a0336cbe, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: fedbc66afdcfe1b46824940e2d33bd64,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Grasslands
     to: Taiga
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 37a043dc13adc4d4293e9b9910b35e3f, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: d7fa5d23a27a9cb49ad676138c035696,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15
   - from: Grasslands
     to: Forest
     chunkGroup:
       name: 
       chunks:
-      - sprite: {fileID: 21300000, guid: 12bd04b5b518c374dba909981c750635, type: 3}
-        material: {fileID: 0}
+      - prefab: {fileID: 5945828012477581777, guid: d7fa5d23a27a9cb49ad676138c035696,
+          type: 3}
         positionIncrement: 10
-        timeUntilSelfDestruct: 15

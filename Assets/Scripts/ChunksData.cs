@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Chunks Data", menuName = "Chunks Data")]
@@ -53,8 +54,9 @@ public class ChunkConnectorGroup
 [Serializable]
 public class Chunk
 {
-    public Sprite sprite;
-    public Material material;
+    //public Sprite sprite;
+    public GameObject prefab;
+    //public Material material;
     public float positionIncrement;
-    public float timeUntilSelfDestruct;
+    //public float timeUntilSelfDestruct;
 }
