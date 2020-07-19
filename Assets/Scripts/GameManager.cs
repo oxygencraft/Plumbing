@@ -1,23 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 [ExecuteInEditMode]
 public class GameManager : MonoBehaviour
 {
     public GameObject loseUI;
-    public TransformMovement movement;
+    public TransformMovement cameraMovement;
+    public TransformMovement backgroundMovement;
+    public TransformMovement environmentGenMovement;
     public Transform metaballParent;
-    public MetaballManager metaballManager;
     public bool mainMenu = false;
 
     public void LoseGame()
     {
-        if (mainMenu || movement == null || loseUI == null)
+        if (mainMenu || cameraMovement == null || backgroundMovement == null || environmentGenMovement == null || loseUI == null)
             return;
         loseUI.SetActive(true);
-        movement.enabled = false;
+        backgroundMovement.enabled = false;
+        cameraMovement.enabled = false;
+        environmentGenMovement.enabled = false;
+        foreach (var selfDestruct in FindObjectsOfType<SelfDestruct>())
+        {
+            if (selfDestruct.gameObject.layer != 9)
+                continue;
+            Destroy(selfDestruct);
+        }
     }
 
     public void EndGame()

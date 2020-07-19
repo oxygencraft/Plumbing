@@ -4,8 +4,6 @@ using UnityEngine;
 [System.Serializable]
 public class MetaballSystem2D
 {
-    private static MetaballManager _metaballManager;
-    public MetaballManager metaballManager;
     private static MetaballSystem2D instance;
 
     [Range(0f, 1f), Tooltip("Outline size.")]

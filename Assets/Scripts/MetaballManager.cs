@@ -1,26 +1,55 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class MetaballManager : MonoBehaviour
+public class MetaballManager : MonoBehaviour, Controls.IGameActions
 {
     private static List<Metaball2D> metaballs = new List<Metaball2D>();
 
     public float defaultMovementSpeed = 200f;
     public float movementSpeed;
     public float timeUntilMove = 2.5f;
+    public float timeUntilControlsEnable = 5.5f;
+
     private bool allowMove = false;
-    private GameObject masterObject = null;
+    private Controls controls;
 
     void Awake()
     {
         movementSpeed = defaultMovementSpeed;
         Invoke("AllowMove", timeUntilMove);
+        //Invoke("EnableControls", timeUntilControlsEnable);
+    }
+
+    void EnableControls()
+    {
+        controls = new Controls();
+        controls.Game.SetCallbacks(this);
+        controls.Game.Enable();
     }
 
     void AllowMove()
     {
         allowMove = true;
+    }
+
+    public void OnSpeed(InputAction.CallbackContext context)
+    {
+        Debug.Log(context.action.phase);
+        float change = context.ReadValue<float>();
+        if (movementSpeed - change < 0)
+            return;
+        movementSpeed += change;
+    }
+
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public void OnFly(InputAction.CallbackContext context)
+    {
+        throw new System.NotImplementedException();
     }
 
     void FixedUpdate()
@@ -29,15 +58,8 @@ public class MetaballManager : MonoBehaviour
             return;
         foreach (var metaball in metaballs)
         {
-            if (masterObject == null)
-                masterObject = metaball.gameObject;
             Rigidbody2D rb = metaball.GetComponent<Rigidbody2D>();
             Vector2 force = new Vector2(movementSpeed, 0f);
-            /*if (metaball.gameObject != masterObject)
-            {
-                force += ((Vector2)metaball.transform.position - (Vector2)masterObject.transform.position) *
-                         Vector2.Distance(metaball.transform.position, masterObject.transform.position);
-            }*/
             rb.AddForce(force * Time.deltaTime, ForceMode2D.Force);
         }
     }
