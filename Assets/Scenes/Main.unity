@@ -2357,5 +2357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Metaball Spawner
       objectReference: {fileID: 0}
+    - target: {fileID: 122016393467079087, guid: 1df31fa98a216ff459545450c38db63d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1df31fa98a216ff459545450c38db63d, type: 3}

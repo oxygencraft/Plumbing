@@ -6,10 +6,10 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public class Controls : IInputActionCollection, IDisposable
+public class @Controls : IInputActionCollection, IDisposable
 {
     public InputActionAsset asset { get; }
-    public Controls()
+    public @Controls()
     {
         asset = InputActionAsset.FromJson(@"{
     ""name"": ""Controls"",
@@ -262,11 +262,11 @@ public class Controls : IInputActionCollection, IDisposable
     private readonly InputAction m_Game_Fly;
     public struct GameActions
     {
-        private Controls m_Wrapper;
-        public GameActions(Controls wrapper) { m_Wrapper = wrapper; }
-        public InputAction Speed => m_Wrapper.m_Game_Speed;
-        public InputAction Jump => m_Wrapper.m_Game_Jump;
-        public InputAction Fly => m_Wrapper.m_Game_Fly;
+        private @Controls m_Wrapper;
+        public GameActions(@Controls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Speed => m_Wrapper.m_Game_Speed;
+        public InputAction @Jump => m_Wrapper.m_Game_Jump;
+        public InputAction @Fly => m_Wrapper.m_Game_Fly;
         public InputActionMap Get() { return m_Wrapper.m_Game; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -276,32 +276,32 @@ public class Controls : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_GameActionsCallbackInterface != null)
             {
-                Speed.started -= m_Wrapper.m_GameActionsCallbackInterface.OnSpeed;
-                Speed.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnSpeed;
-                Speed.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnSpeed;
-                Jump.started -= m_Wrapper.m_GameActionsCallbackInterface.OnJump;
-                Jump.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnJump;
-                Jump.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnJump;
-                Fly.started -= m_Wrapper.m_GameActionsCallbackInterface.OnFly;
-                Fly.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnFly;
-                Fly.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnFly;
+                @Speed.started -= m_Wrapper.m_GameActionsCallbackInterface.OnSpeed;
+                @Speed.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnSpeed;
+                @Speed.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnSpeed;
+                @Jump.started -= m_Wrapper.m_GameActionsCallbackInterface.OnJump;
+                @Jump.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnJump;
+                @Jump.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnJump;
+                @Fly.started -= m_Wrapper.m_GameActionsCallbackInterface.OnFly;
+                @Fly.performed -= m_Wrapper.m_GameActionsCallbackInterface.OnFly;
+                @Fly.canceled -= m_Wrapper.m_GameActionsCallbackInterface.OnFly;
             }
             m_Wrapper.m_GameActionsCallbackInterface = instance;
             if (instance != null)
             {
-                Speed.started += instance.OnSpeed;
-                Speed.performed += instance.OnSpeed;
-                Speed.canceled += instance.OnSpeed;
-                Jump.started += instance.OnJump;
-                Jump.performed += instance.OnJump;
-                Jump.canceled += instance.OnJump;
-                Fly.started += instance.OnFly;
-                Fly.performed += instance.OnFly;
-                Fly.canceled += instance.OnFly;
+                @Speed.started += instance.OnSpeed;
+                @Speed.performed += instance.OnSpeed;
+                @Speed.canceled += instance.OnSpeed;
+                @Jump.started += instance.OnJump;
+                @Jump.performed += instance.OnJump;
+                @Jump.canceled += instance.OnJump;
+                @Fly.started += instance.OnFly;
+                @Fly.performed += instance.OnFly;
+                @Fly.canceled += instance.OnFly;
             }
         }
     }
-    public GameActions Game => new GameActions(this);
+    public GameActions @Game => new GameActions(this);
     public interface IGameActions
     {
         void OnSpeed(InputAction.CallbackContext context);

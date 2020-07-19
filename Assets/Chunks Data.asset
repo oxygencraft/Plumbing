@@ -228,7 +228,7 @@ MonoBehaviour:
     chunkGroup:
       name: 
       chunks:
-      - prefab: {fileID: 5945828012477581777, guid: d7fa5d23a27a9cb49ad676138c035696,
+      - prefab: {fileID: 5945828012477581777, guid: 6da92f3967b444949957ca2c9ea9b7b8,
           type: 3}
         positionIncrement: 10
   - from: Grasslands
