@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7136523331211632157}
   - component: {fileID: 7277635853551260559}
   - component: {fileID: -2670963663193863857}
+  - component: {fileID: 1606901711430157694}
   m_Layer: 0
   m_Name: ForestGrasslands
   m_TagString: Untagged
@@ -95,3 +96,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilSelfDestruct: 15
+--- !u!60 &1606901711430157694
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5945828012477581777}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 10.8}
+    newSize: {x: 10, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -5, y: -5.4}
+      - {x: 5, y: -5.4}
+      - {x: 5, y: -2.08}
+      - {x: 2.7585144, y: -2.0494149}
+      - {x: 1.9649658, y: -2.0696223}
+      - {x: 0.2526245, y: -2.1394293}
+      - {x: -0.75479126, y: -2.0956194}
+      - {x: -1.9375305, y: -2.1473682}
+      - {x: -2.9002686, y: -2.1364658}
+      - {x: -4.010559, y: -2.1161487}
+      - {x: -5, y: -2.11}

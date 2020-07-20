@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7136523331211632157}
   - component: {fileID: 7277635853551260559}
   - component: {fileID: -5652720868476509755}
+  - component: {fileID: 3239900636131869521}
   m_Layer: 0
   m_Name: Desert4
   m_TagString: Untagged
@@ -95,3 +96,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilSelfDestruct: 15
+--- !u!60 &3239900636131869521
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5945828012477581777}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 10.8}
+    newSize: {x: 10, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 4.9876404, y: -2.1170182}
+      - {x: 4.269226, y: -2.029735}
+      - {x: 3.4838867, y: -1.9617743}
+      - {x: 2.8692627, y: -1.9206333}
+      - {x: 2.2497559, y: -1.9021044}
+      - {x: 1.7355652, y: -1.9068601}
+      - {x: 1.1505432, y: -1.9614093}
+      - {x: 0.6168518, y: -2.02847}
+      - {x: 0.119018555, y: -2.0517337}
+      - {x: -0.24639893, y: -2.0464094}
+      - {x: -0.6557312, y: -2.0885167}
+      - {x: -1.1239929, y: -2.1642501}
+      - {x: -1.6654358, y: -2.2807958}
+      - {x: -2.132965, y: -2.3476024}
+      - {x: -2.418396, y: -2.3775244}
+      - {x: -2.7836304, y: -2.371506}
+      - {x: -3.2671204, y: -2.3401003}
+      - {x: -3.8737488, y: -2.2621582}
+      - {x: -5, y: -2.1157937}
+      - {x: -5, y: -5.4}
+      - {x: 5, y: -5.4}

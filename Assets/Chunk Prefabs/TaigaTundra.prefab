@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7136523331211632157}
   - component: {fileID: 7277635853551260559}
   - component: {fileID: -6969558233871794634}
+  - component: {fileID: 2265293727940977449}
   m_Layer: 0
   m_Name: TaigaTundra
   m_TagString: Untagged
@@ -95,3 +96,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilSelfDestruct: 15
+--- !u!60 &2265293727940977449
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5945828012477581777}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 10.8}
+    newSize: {x: 10, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 5, y: -5.4}
+      - {x: -5, y: -5.4}
+      - {x: -5, y: -2.11}
+      - {x: -4.3325195, y: -2.11}
+      - {x: -2.5357056, y: -2.1809266}
+      - {x: -1.1766663, y: -2.1332285}
+      - {x: -0.7390442, y: -2.1082516}
+      - {x: 0.10043335, y: -2.132142}
+      - {x: 1.0221558, y: -2.1168501}
+      - {x: 1.9916382, y: -2.0562582}
+      - {x: 2.8447266, y: -2.0491223}
+      - {x: 5, y: -2.11}

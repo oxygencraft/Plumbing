@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7136523331211632157}
   - component: {fileID: 7277635853551260559}
   - component: {fileID: 7985618440674840254}
+  - component: {fileID: 7186625474717559155}
   m_Layer: 0
   m_Name: TaigaForest
   m_TagString: Untagged
@@ -95,3 +96,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilSelfDestruct: 15
+--- !u!60 &7186625474717559155
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5945828012477581777}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 10.8}
+    newSize: {x: 10, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 5, y: -5.4}
+      - {x: -5, y: -5.4}
+      - {x: -5, y: -2.12}
+      - {x: -3.7911987, y: -2.0935278}
+      - {x: -2.6130066, y: -2.1760533}
+      - {x: -0.9216614, y: -2.0972252}
+      - {x: 0.36502075, y: -2.1421359}
+      - {x: 2.3368835, y: -2.0533028}
+      - {x: 5, y: -2.12}
