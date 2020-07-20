@@ -34,7 +34,7 @@
                 {
                     "name": "Keyboard AD",
                     "id": "d1d9a9d4-fd67-4a46-9794-1421b88f60df",
-                    "path": "1DAxis",
+                    "path": "1DAxis(minValue=-0.015,maxValue=0.015)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -67,7 +67,7 @@
                 {
                     "name": "Keyboard Arrow Keys",
                     "id": "964f32cf-9cba-4196-b33b-c6c7b062f2db",
-                    "path": "1DAxis",
+                    "path": "1DAxis(minValue=-0.15,maxValue=0.15)",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

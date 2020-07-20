@@ -2,30 +2,33 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class MetaballManager : MonoBehaviour, Controls.IGameActions
+public class MetaballManager : MonoBehaviour
 {
     private static List<Metaball2D> metaballs = new List<Metaball2D>();
 
     public float defaultMovementSpeed = 200f;
     public float movementSpeed;
+    public float jumpForce = 0.85f;
+    public int jumpIterations = 4;
     public float timeUntilMove = 2.5f;
     public float timeUntilControlsEnable = 5.5f;
 
     private bool allowMove = false;
-    private Controls controls;
+    private bool allowControl = false;
+
+    private float speedChange = 0f;
+    private bool jump = false;
 
     void Awake()
     {
         movementSpeed = defaultMovementSpeed;
         Invoke("AllowMove", timeUntilMove);
-        //Invoke("EnableControls", timeUntilControlsEnable);
+        Invoke("EnableControls", timeUntilControlsEnable);
     }
 
     void EnableControls()
     {
-        controls = new Controls();
-        controls.Game.SetCallbacks(this);
-        controls.Game.Enable();
+        allowControl = true;
     }
 
     void AllowMove()
@@ -33,25 +36,55 @@ public class MetaballManager : MonoBehaviour, Controls.IGameActions
         allowMove = true;
     }
 
+    // Get input from the controls in the next three methods
+    // Do not do this in FixedUpdate or Update
     public void OnSpeed(InputAction.CallbackContext context)
     {
-        Debug.Log(context.action.phase);
-        float change = context.ReadValue<float>();
-        if (movementSpeed - change < 0)
+        if (!allowControl)
             return;
-        movementSpeed += change;
+        //Debug.Log(context.action.phase);
+        if (context.action.phase == InputActionPhase.Canceled)
+        {
+            speedChange = 0;
+            return;
+        }
+        speedChange = context.ReadValue<float>();
     }
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+        if (!allowControl || !onGround)
+            return;
+        jump = true;
+        onGround = false;
+        onGroundMetaballs = 0;
+        foreach (var metaball in metaballs)
+        {
+            metaball.onGround = false;
+        }
     }
 
     public void OnFly(InputAction.CallbackContext context)
     {
-        throw new System.NotImplementedException();
+
     }
 
+    // Make sure we don't jump when we jumped and are still in the air
+    private static bool onGround = true;
+    private static int onGroundMetaballs = 0;
+
+    public static void OnGround()
+    {
+        if (++onGroundMetaballs >= metaballs.Count)
+            onGround = true;
+    }
+
+    // You need to apply velocity force more than one time in order for water to jump
+    // This is a jump iteration system to make it apply force several times
+    private int jumpIteration = 0;
+
+    // Do not handle controls here, do that in Update
+    // You can respond to velocity variables in here however
     void FixedUpdate()
     {
         if (!allowMove)
@@ -59,9 +92,29 @@ public class MetaballManager : MonoBehaviour, Controls.IGameActions
         foreach (var metaball in metaballs)
         {
             Rigidbody2D rb = metaball.GetComponent<Rigidbody2D>();
-            Vector2 force = new Vector2(movementSpeed, 0f);
-            rb.AddForce(force * Time.deltaTime, ForceMode2D.Force);
+            float _jumpForce = 0f;
+            if (jump)
+            {
+                _jumpForce = jumpForce;
+                if (jumpIteration++ == jumpIterations)
+                {
+                    jumpIteration = 0;
+                    jump = false;
+                }
+            }
+            Vector2 force = new Vector2(movementSpeed, rb.velocity.y + _jumpForce);
+            rb.velocity = force;
         }
+    }
+
+    // Only handle controls changing speed or velocity here
+    // If changing velocity, put it inside a variable and have
+    // FixedUpdate add that velocity on top of the current velocity
+    // and then have it reset that variable
+    void Update()
+    {
+        if (speedChange != 0 && !(movementSpeed + speedChange <= 0))
+            movementSpeed += speedChange * 0.09f;
     }
 
     public static void AddMetaball(Metaball2D metaball)

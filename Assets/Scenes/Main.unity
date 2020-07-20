@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 380823196}
   - component: {fileID: 380823195}
   - component: {fileID: 380823194}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501708601}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.96, y: -1.13, z: 0}
+  m_LocalPosition: {x: -17.69, y: 3.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1035,10 +1035,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b8786c5fadcdfc4e9556d97a10b03b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultMovementSpeed: 800
+  defaultMovementSpeed: 7.25
   movementSpeed: 0
+  jumpForce: 1.7
+  jumpIterations: 100
   timeUntilMove: 1
-  timeUntilControlsEnable: 5.5
+  timeUntilControlsEnable: 3.5
 --- !u!4 &1225612549
 Transform:
   m_ObjectHideFlags: 0
@@ -1095,11 +1097,33 @@ MonoBehaviour:
     m_ActionId: 1da4260f-6254-4b81-a887-86493c114b67
     m_ActionName: Game/Speed[/Keyboard/a,/Keyboard/d,/Keyboard/leftArrow,/Keyboard/rightArrow]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1225612548}
+        m_MethodName: OnJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: d25f5f25-3f4c-47ae-b861-80d9f9dd7845
     m_ActionName: Game/Jump[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1225612548}
+        m_MethodName: OnFly
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 6b5743ec-5d27-4b01-a895-377c9b79d44e
     m_ActionName: Game/Fly[/Keyboard/space,/Keyboard/s,/Keyboard/w,/Keyboard/downArrow,/Keyboard/upArrow]
   m_NeverAutoSwitchControlSchemes: 0
@@ -1856,7 +1880,7 @@ MonoBehaviour:
   incrementPerFrame: {x: 0.2, y: 0, z: 0}
   movement: {x: 8, y: 0, z: 0}
   stopTime: -1
-  startTime: 5.5
+  startTime: 3.5
 --- !u!1 &1855091481
 GameObject:
   m_ObjectHideFlags: 0
@@ -1891,7 +1915,7 @@ MonoBehaviour:
   incrementPerFrame: {x: 0.2, y: 0, z: 0}
   movement: {x: 8, y: 0, z: 0}
   stopTime: -1
-  startTime: 5.5
+  startTime: 3.5
 --- !u!4 &1855091483
 Transform:
   m_ObjectHideFlags: 0
@@ -1923,7 +1947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: -10}
-  smoothTime: 1
+  smoothTime: 0.7
   maxSpeed: Infinity
   cutoff: 1
   cutoffPoint: {x: 0, y: 0.01, z: -10}
@@ -2300,7 +2324,7 @@ PrefabInstance:
     - target: {fileID: 122016393467079081, guid: 1df31fa98a216ff459545450c38db63d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.91
+      value: -17.29
       objectReference: {fileID: 0}
     - target: {fileID: 122016393467079081, guid: 1df31fa98a216ff459545450c38db63d,
         type: 3}

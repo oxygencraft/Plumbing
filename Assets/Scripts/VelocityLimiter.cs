@@ -2,7 +2,7 @@
 
 public class VelocityLimiter : MonoBehaviour
 {
-    public Rigidbody2D rigidbody;
+    public new Rigidbody2D rigidbody;
     public Vector2 maxVelocity;
     public Vector2 setToVelocity;
     public float maxAngularVelocity;
