@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7136523331211632157}
   - component: {fileID: 7277635853551260559}
   - component: {fileID: -3949606836774799093}
+  - component: {fileID: 4577943701581460068}
   m_Layer: 0
   m_Name: Grasslands1
   m_TagString: Untagged
@@ -95,3 +96,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilSelfDestruct: 15
+--- !u!60 &4577943701581460068
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5945828012477581777}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 10.8}
+    newSize: {x: 10, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 3.9022217, y: -2.0754752}
+      - {x: 2.2484741, y: -2.0552917}
+      - {x: 1.592102, y: -2.072644}
+      - {x: 0.11465454, y: -2.1383364}
+      - {x: -0.5131531, y: -2.1067338}
+      - {x: -2.2394714, y: -2.1621177}
+      - {x: -3.3314514, y: -2.1439195}
+      - {x: -4.9971924, y: -2.1107662}
+      - {x: -5, y: -5.4}
+      - {x: 5, y: -5.4}
+      - {x: 4.9996033, y: -2.1116173}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7136523331211632157}
   - component: {fileID: 7277635853551260559}
   - component: {fileID: 7625248401707480290}
+  - component: {fileID: 5140578348388543294}
   m_Layer: 0
   m_Name: Tundra3
   m_TagString: Untagged
@@ -95,3 +96,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilSelfDestruct: 15
+--- !u!60 &5140578348388543294
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5945828012477581777}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10, y: 10.8}
+    newSize: {x: 10, y: 10.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.3261108, y: -2.0420911}
+      - {x: 0.23059082, y: -2.1257753}
+      - {x: -0.6328125, y: -2.104394}
+      - {x: -2.3917236, y: -2.1528587}
+      - {x: -4.999939, y: -2.1111975}
+      - {x: -5, y: -5.4}
+      - {x: 5, y: -5.4}
+      - {x: 5.000061, y: -2.1070669}
