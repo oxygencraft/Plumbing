@@ -14,25 +14,15 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID PLAYERISDEAD = 4073605608U;
         static const AkUniqueID WATER = 2654748154U;
     } // namespace EVENTS
 
     namespace STATES
     {
-        namespace MUSICLEVEL
+        namespace PLAYERSTATUS
         {
-            static const AkUniqueID GROUP = 543979504U;
-
-            namespace STATE
-            {
-                static const AkUniqueID LEVEL_1 = 1290008369U;
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace MUSICLEVEL
-
-        namespace PLAYERLIFE
-        {
-            static const AkUniqueID GROUP = 444815956U;
+            static const AkUniqueID GROUP = 3800848640U;
 
             namespace STATE
             {
@@ -40,12 +30,13 @@ namespace AK
                 static const AkUniqueID DEAD = 2044049779U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
-        } // namespace PLAYERLIFE
+        } // namespace PLAYERSTATUS
 
     } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID AMOUNTOFWATER = 3223332851U;
         static const AkUniqueID SS_AIR_FEAR = 1351367891U;
         static const AkUniqueID SS_AIR_FREEFALL = 3002758120U;
         static const AkUniqueID SS_AIR_FURY = 1029930033U;
@@ -56,6 +47,7 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID WATERSPEED = 1137641355U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

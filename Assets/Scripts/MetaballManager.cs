@@ -12,6 +12,7 @@ public class MetaballManager : MonoBehaviour
     public int jumpIterations = 4;
     public float timeUntilMove = 2.5f;
     public float timeUntilControlsEnable = 5.5f;
+    public static float waterSpeed;
 
     private bool allowMove = false;
     private bool allowControl = false;
@@ -19,6 +20,7 @@ public class MetaballManager : MonoBehaviour
     private float speedChange = 0f;
     private bool jump = false;
 
+    
     void Awake()
     {
         movementSpeed = defaultMovementSpeed;
@@ -113,6 +115,8 @@ public class MetaballManager : MonoBehaviour
     // and then have it reset that variable
     void Update()
     {
+        waterSpeed = movementSpeed;
+
         if (speedChange != 0 && !(movementSpeed + speedChange <= 0))
             movementSpeed += speedChange * 0.09f;
     }
@@ -139,4 +143,6 @@ public class MetaballManager : MonoBehaviour
             catch (System.NullReferenceException) { }
         }
     }
+
+    
 }

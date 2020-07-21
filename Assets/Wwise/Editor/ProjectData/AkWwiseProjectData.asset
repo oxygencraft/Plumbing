@@ -40,7 +40,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c14bdfeed3909144a4e7ffc9fb9cfae1
     GuidInternal: 
-    m_lastTime: -8586066169444775808
+    m_lastTime: -8586062947884775808
     List:
     - name: General
       guid: 8e8cca407ca4f2438a925027b36c4e58
@@ -65,7 +65,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5063aa135b1e0343b1aaad1e655eb1f4
     GuidInternal: 
-    m_lastTime: -8586065763864775808
+    m_lastTime: -8586062938644775808
     List:
     - name: Music
       guid: 19236dd6edf71843b47b4e2d3de41719
@@ -76,6 +76,18 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 3
       Path: Default Work Unit/Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayerIsDead
+      guid: e7e960967ac1964f9322f58e47e60363
+      id: 4073605608
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlayerIsDead
+        ObjectType: 3
+      Path: Default Work Unit/PlayerIsDead
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -96,8 +108,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 0c7140943e3ee546954ef58c88dd01c9
     GuidInternal: 
-    m_lastTime: -8586066367044775808
-    List: []
+    m_lastTime: -8586062960174775808
+    List:
+    - name: AmountOfWater
+      guid: 03f0ab8ccd4df0418ae3ffbeec3d24cc
+      id: 3223332851
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: AmountOfWater
+        ObjectType: 13
+      Path: Default Work Unit/AmountOfWater
   - PhysicalPath: Game Parameters/Factory SoundSeed Air Game Syncs.wwu
     ParentPath: Factory SoundSeed Air Game Syncs
     guid: 5577163b42fb8b4598bf96f557afb3b9
@@ -199,57 +220,32 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 9fc0bd155d8aea4099d7168386e8118f
     GuidInternal: 
-    m_lastTime: -8586065763864775808
+    m_lastTime: -8586062935774775808
     List:
-    - name: MusicLevel
+    - name: PlayerStatus
       guid: d9e186ef2dee3449bb74dd1bbb55b20b
-      id: 543979504
+      id: 3800848640
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: MusicLevel
+      - ElementName: PlayerStatus
         ObjectType: 9
-      Path: Default Work Unit/MusicLevel
-      values:
-      - name: Level_1
-        guid: 274e9f869722d043975475bd70788e09
-        id: 1290008369
-        PathAndIcons:
-        - ElementName: Level_1
-          ObjectType: 8
-      - name: None
-        guid: 804a6f427471c2468fcfd25edcab7afa
-        id: 748895195
-        PathAndIcons:
-        - ElementName: None
-          ObjectType: 8
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: PlayerLife
-      guid: 872817ee9517944098df64a219a7ba7b
-      id: 444815956
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: PlayerLife
-        ObjectType: 9
-      Path: Default Work Unit/PlayerLife
+      Path: Default Work Unit/PlayerStatus
       values:
       - name: Alive
-        guid: fe4de7a046e5f14ab0058c92d6a4f0f9
+        guid: 274e9f869722d043975475bd70788e09
         id: 655265632
         PathAndIcons:
         - ElementName: Alive
           ObjectType: 8
       - name: Dead
-        guid: 62fc9b4814fe074ebcf402e51a31688a
+        guid: 164d319c490c3846a4618fa3eecc35c2
         id: 2044049779
         PathAndIcons:
         - ElementName: Dead
           ObjectType: 8
       - name: None
-        guid: 301ecf4418c86e459df8459663e405b5
+        guid: 804a6f427471c2468fcfd25edcab7afa
         id: 748895195
         PathAndIcons:
         - ElementName: None
@@ -273,5 +269,7 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Plumbing_WaterGame
+  - /Plumbing_WaterGame/Events
+  - /Plumbing_WaterGame/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

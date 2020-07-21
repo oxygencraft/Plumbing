@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc1c2d725e4d84d66991b197e1b7c006, type: 3}
+  m_Name: EF86E1D9-EE2D-4934-BB74-DD1BBB55B20B
+  m_EditorClassIdentifier: 
+  objectName: PlayerStatus
+  id: 3800848640
+  guid: EF86E1D9-EE2D-4934-BB74-DD1BBB55B20B
