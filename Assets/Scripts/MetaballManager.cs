@@ -55,6 +55,8 @@ public class MetaballManager : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
+        // I give up for now so I'm disabling jump
+        onGround = false;
         if (!allowControl || !onGround)
             return;
         jump = true;
@@ -62,7 +64,7 @@ public class MetaballManager : MonoBehaviour
         onGroundMetaballs = 0;
         foreach (var metaball in metaballs)
         {
-            metaball.onGround = false;
+            metaball.Jumped();
         }
     }
 
@@ -97,7 +99,7 @@ public class MetaballManager : MonoBehaviour
             float _jumpForce = 0f;
             if (jump)
             {
-                _jumpForce = jumpForce;
+                _jumpForce = jumpForce * metaball.mass;
                 if (jumpIteration++ == jumpIterations)
                 {
                     jumpIteration = 0;
@@ -115,10 +117,9 @@ public class MetaballManager : MonoBehaviour
     // and then have it reset that variable
     void Update()
     {
-        waterSpeed = movementSpeed;
-
         if (speedChange != 0 && !(movementSpeed + speedChange <= 0))
             movementSpeed += speedChange * 0.09f;
+        waterSpeed = movementSpeed;
     }
 
     public static void AddMetaball(Metaball2D metaball)
@@ -143,6 +144,4 @@ public class MetaballManager : MonoBehaviour
             catch (System.NullReferenceException) { }
         }
     }
-
-    
 }
