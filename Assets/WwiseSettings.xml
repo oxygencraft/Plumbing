@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WwiseSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CopySoundBanksAsPreBuildStep>true</CopySoundBanksAsPreBuildStep>
+  <CreatedPicker>true</CreatedPicker>
+  <CreateWwiseGlobal>true</CreateWwiseGlobal>
+  <CreateWwiseListener>false</CreateWwiseListener>
+  <GenerateSoundBanksAsPreBuildStep>false</GenerateSoundBanksAsPreBuildStep>
+  <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
+  <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
+  <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+  <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2019.2.4.7329/Wwise.app</WwiseInstallationPathMac>
+  <WwiseInstallationPathWindows />
+  <WwiseProjectPath>../../../Spring_2020/Videogames/Watergame/Plumbing_WaterGame/Plumbing_WaterGame.wproj</WwiseProjectPath>
+</WwiseSettings>

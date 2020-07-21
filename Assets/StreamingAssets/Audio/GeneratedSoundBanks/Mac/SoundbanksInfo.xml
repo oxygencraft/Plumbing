@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Spring_2020/Videogames/Watergame/Plumbing_WaterGame/</ProjectRoot>
+		<SourceFilesRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Spring_2020/Videogames/Watergame/Plumbing_WaterGame/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Plumbing/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Spring_2020/Videogames/Watergame/Plumbing_WaterGame/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="133642231" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\General</ObjectPath>
+			<ShortName>General</ShortName>
+			<Path>General.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="41513658" Language="SFX">
+							<ShortName>Level I - A\PlumbigGame_LevelI-A_Drums.wav</ShortName>
+							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Drums_834C3208.wem</Path>
+						</File>
+						<File Id="154771792" Language="SFX">
+							<ShortName>Level I - A\PlumbigGame_LevelI-A_Melody2.wav</ShortName>
+							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Melody2_834C3208.wem</Path>
+						</File>
+						<File Id="303993926" Language="SFX">
+							<ShortName>Level I - A\PlumbigGame_LevelI-A_KickCycleswav.wav</ShortName>
+							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_KickCycleswav_834C3208.wem</Path>
+						</File>
+						<File Id="310399170" Language="SFX">
+							<ShortName>Level I - A\PlumbigGame_LevelI-A_Synth Pulse.wav</ShortName>
+							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Synth Pulse_834C3208.wem</Path>
+						</File>
+						<File Id="643544157" Language="SFX">
+							<ShortName>MFGJ_Intro_CymbalRoll_140bpm_4-4_L16M-P1.wav</ShortName>
+							<Path>SFX/MFGJ_Intro_CymbalRoll_140bpm_4-4_L16M-P1_834C3208.wem</Path>
+						</File>
+						<File Id="762508165" Language="SFX">
+							<ShortName>Level I - A\PlumbigGame_LevelI-A_Shaker.wav</ShortName>
+							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Shaker_834C3208.wem</Path>
+						</File>
+						<File Id="807324252" Language="SFX">
+							<ShortName>Level I - A\PlumbigGame_LevelI-A_Fireflies.wav</ShortName>
+							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Fireflies_834C3208.wem</Path>
+						</File>
+						<File Id="812424822" Language="SFX">
+							<ShortName>Level I - A\PlumbigGame_LevelI-A_BaseBass.wav</ShortName>
+							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_BaseBass_834C3208.wem</Path>
+						</File>
+						<File Id="842378591" Language="SFX">
+							<ShortName>Level I - A\PlumbigGame_LevelI-A_Kick.wav</ShortName>
+							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Kick_834C3208.wem</Path>
+						</File>
+						<File Id="890896381" Language="SFX">
+							<ShortName>Level I - A\PlumbigGame_LevelI-A_Andromeda.wav</ShortName>
+							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Andromeda_834C3208.wem</Path>
+						</File>
+						<File Id="903030614" Language="SFX">
+							<ShortName>Level I - A\PlumbigGame_LevelI-A_Melody.wav</ShortName>
+							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Melody_834C3208.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2654748154" Name="Water" ObjectPath="\Events\Default Work Unit\Water" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="658009416" Language="SFX">
+							<ShortName>Water_1 .wav</ShortName>
+							<Path>SFX/Water_1 _514D44AD.wem</Path>
+						</File>
+						<File Id="741864568" Language="SFX">
+							<ShortName>Water_3.wav</ShortName>
+							<Path>SFX/Water_3_77004ED1.wem</Path>
+						</File>
+						<File Id="852683952" Language="SFX">
+							<ShortName>Water_2.wav</ShortName>
+							<Path>SFX/Water_2_E6B54F6C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

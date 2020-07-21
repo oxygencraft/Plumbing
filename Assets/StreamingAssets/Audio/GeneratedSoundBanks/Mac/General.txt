@@ -1,0 +1,35 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2654748154	Water			\Default Work Unit\Water	
+	3991942870	Music			\Default Work Unit\Music	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	444815956	PlayerLife			\Default Work Unit\PlayerLife	
+	543979504	MusicLevel			\Default Work Unit\MusicLevel	
+
+State	ID	Name	State Group			Notes
+	655265632	Alive	PlayerLife			
+	748895195	None	PlayerLife			
+	2044049779	Dead	PlayerLife			
+	748895195	None	MusicLevel			
+	1290008369	Level_1	MusicLevel			
+
+Effect plug-ins	ID	Name	Type				Notes
+	2648499661	Hall_Medium_Dark	Wwise RoomVerb			
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	41513658	PlumbigGame_LevelI-A_Drums	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Level I - A\PlumbigGame_LevelI-A_Drums_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\Default\Level I - B\PlumbigGame_LevelI-A_Drums		416565
+	154771792	PlumbigGame_LevelI-A_Melody2	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Level I - A\PlumbigGame_LevelI-A_Melody2_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\Default\Level I - B\PlumbigGame_LevelI-A_Melody2		577063
+	303993926	PlumbigGame_LevelI-A_BaseBass	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Level I - A\PlumbigGame_LevelI-A_KickCycleswav_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\Default\Level I - B\PlumbigGame_LevelI-A_BaseBass		390609
+	310399170	PlumbigGame_LevelI-A_Synth Pulse	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Level I - A\PlumbigGame_LevelI-A_Synth Pulse_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\Default\Level I - B\PlumbigGame_LevelI-A_Synth Pulse		587046
+	643544157	MFGJ_Intro_CymbalRoll_140bpm_4-4_L16M-P1	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\MFGJ_Intro_CymbalRoll_140bpm_4-4_L16M-P1_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\Default\Level I - A\MFGJ_Intro_CymbalRoll_140bpm_4-4_L16M-P1		211022
+	658009416	Water_1	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Water_1 _514D44AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Water\Water_1		339234
+	741864568	Water_3	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Water_3_77004ED1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Water\Water_3		869855
+	762508165	PlumbigGame_LevelI-A_Shaker	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Level I - A\PlumbigGame_LevelI-A_Shaker_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\Default\Level I - A\PlumbigGame_LevelI-A_Shaker		579559
+	807324252	PlumbigGame_LevelI-A_Fireflies	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Level I - A\PlumbigGame_LevelI-A_Fireflies_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\Default\Level I - B\PlumbigGame_LevelI-A_Fireflies		479770
+	812424822	PlumbigGame_LevelI-A_BaseBass	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Level I - A\PlumbigGame_LevelI-A_BaseBass_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\Default\Level I - A\PlumbigGame_LevelI-A_BaseBass		549707
+	842378591	PlumbigGame_LevelI-A_Kick	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Level I - A\PlumbigGame_LevelI-A_Kick_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\Default\Level I - A\PlumbigGame_LevelI-A_Kick		109023
+	852683952	Water_2	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Water_2_E6B54F6C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Water\Water_2		555691
+	890896381	PlumbigGame_LevelI-A_Andromeda	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Level I - A\PlumbigGame_LevelI-A_Andromeda_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\Default\Level I - C\PlumbigGame_LevelI-A_Andromeda		511258
+	903030614	PlumbigGame_LevelI-A_Melody	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Level I - A\PlumbigGame_LevelI-A_Melody_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\Default\Level I - A\PlumbigGame_LevelI-A_Melody		574817
+
