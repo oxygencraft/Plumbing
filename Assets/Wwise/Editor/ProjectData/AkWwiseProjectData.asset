@@ -40,7 +40,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c14bdfeed3909144a4e7ffc9fb9cfae1
     GuidInternal: 
-    m_lastTime: -8586062947884775808
+    m_lastTime: -8586062930284775808
     List:
     - name: General
       guid: 8e8cca407ca4f2438a925027b36c4e58
@@ -89,8 +89,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/PlayerIsDead
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Water
       guid: 1695c64276ebb547899c27ce3a20c38b
       id: 2654748154
@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 0c7140943e3ee546954ef58c88dd01c9
     GuidInternal: 
-    m_lastTime: -8586062960174775808
+    m_lastTime: -8586062547114775808
     List:
     - name: AmountOfWater
       guid: 03f0ab8ccd4df0418ae3ffbeec3d24cc
@@ -119,6 +119,15 @@ MonoBehaviour:
       - ElementName: AmountOfWater
         ObjectType: 13
       Path: Default Work Unit/AmountOfWater
+    - name: WaterSpeed
+      guid: 19ccc45fb0d33b4c804a229409e6a566
+      id: 1137641355
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: WaterSpeed
+        ObjectType: 13
+      Path: Default Work Unit/WaterSpeed
   - PhysicalPath: Game Parameters/Factory SoundSeed Air Game Syncs.wwu
     ParentPath: Factory SoundSeed Air Game Syncs
     guid: 5577163b42fb8b4598bf96f557afb3b9

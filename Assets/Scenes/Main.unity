@@ -1824,8 +1824,8 @@ GameObject:
   - component: {fileID: 1516875459}
   - component: {fileID: 1516875463}
   - component: {fileID: 1516875460}
-  - component: {fileID: 1516875464}
   - component: {fileID: 1516875465}
+  - component: {fileID: 1516875464}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -2004,7 +2004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 670bb59b0e789498dac5c4d1954e4807, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerList: f7e1664c
+  triggerList: ae8d9d44
   useOtherObject: 0
   data:
     idInternal: 0

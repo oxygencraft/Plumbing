@@ -15,6 +15,6 @@ public class AmountOfWaterRPTC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AmountOfWater.SetGlobalValue(MetaballManager.waterSpeed);
+        AmountOfWater.SetGlobalValue(MetaballManager.GetMetaballs().Count);
     }
 }

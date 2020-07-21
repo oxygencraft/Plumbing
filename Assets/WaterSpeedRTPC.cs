@@ -15,6 +15,6 @@ public class WaterSpeedRTPC : MonoBehaviour
     void Update()
     {
        
-        WaterSpeedRPTC.SetGlobalValue(MetaballManager.GetMetaballs().Count);
+        WaterSpeedRPTC.SetGlobalValue(MetaballManager.waterSpeed);
     }
 }
