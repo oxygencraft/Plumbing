@@ -10,6 +10,7 @@ public class MetaballManager : MonoBehaviour
     public float movementSpeed;
     public float jumpForce = 0.85f;
     public int jumpIterations = 4;
+    public float flySpeed = 0.1f;
     public float timeUntilMove = 2.5f;
     public float timeUntilControlsEnable = 5.5f;
     public static float waterSpeed;
@@ -19,6 +20,8 @@ public class MetaballManager : MonoBehaviour
 
     private float speedChange = 0f;
     private bool jump = false;
+    private bool isFlying = false;
+    private float _flySpeed = 0f;
 
     
     void Awake()
@@ -38,7 +41,7 @@ public class MetaballManager : MonoBehaviour
         allowMove = true;
     }
 
-    // Get input from the controls in the next three methods
+    // Get input from the controls in the next four methods
     // Do not do this in FixedUpdate or Update
     public void OnSpeed(InputAction.CallbackContext context)
     {
@@ -53,11 +56,75 @@ public class MetaballManager : MonoBehaviour
         speedChange = context.ReadValue<float>();
     }
 
-    public void OnJump(InputAction.CallbackContext context)
+    private bool isHoldingSpace = false;
+    private bool pressedSpace = false;
+
+    public void OnSpace(InputAction.CallbackContext context)
+    {
+        if (!allowControl)
+            return;
+        if (context.canceled)
+        {
+            Debug.Log("Space Cancelled!");
+            isHoldingSpace = false;
+            return;
+        }
+        Debug.Log("Space!");
+
+        isHoldingSpace = true;
+        Invoke("PerformSpaceAction", 0.2f);
+    }
+
+    private void PerformSpaceAction()
+    {
+        if (!isHoldingSpace)
+        {
+            Debug.Log("Jumping!");
+            OnJump();
+            return;
+        }
+        if (!isFlying)
+            Fly(0f);
+    }
+
+    public void OnFly(InputAction.CallbackContext context)
+    {
+        Fly(context.ReadValue<float>(), context.canceled);
+    }
+
+    private float preFlySpeed = 0f;
+
+    private void Fly(float flySpeed, bool canceled = false)
+    {
+        if (!isHoldingSpace)
+        {
+            Debug.Log("Flying Control Stopped!");
+            preFlySpeed = canceled ? 0f : flySpeed;
+            isFlying = false;
+            return;
+        }
+        if (!isFlying)
+        {
+            Debug.Log("Early Fly Start");
+            isFlying = true;
+        }
+
+        if (canceled)
+        {
+            Debug.Log("Fly speed change canceled!");
+            _flySpeed = 0f;
+            return;
+        }
+        isFlying = true;
+        _flySpeed = preFlySpeed != 0f ? preFlySpeed : flySpeed;
+        Debug.Log("Flying! Flying speed:" + _flySpeed + " PreFlySpeed:" + preFlySpeed);
+    }
+
+    public void OnJump()
     {
         // I give up for now so I'm disabling jump
         onGround = false;
-        if (!allowControl || !onGround)
+        if (!onGround)
             return;
         jump = true;
         onGround = false;
@@ -66,11 +133,6 @@ public class MetaballManager : MonoBehaviour
         {
             metaball.Jumped();
         }
-    }
-
-    public void OnFly(InputAction.CallbackContext context)
-    {
-
     }
 
     // Make sure we don't jump when we jumped and are still in the air
@@ -107,6 +169,10 @@ public class MetaballManager : MonoBehaviour
                 }
             }
             Vector2 force = new Vector2(movementSpeed, rb.velocity.y + _jumpForce);
+            if (!isHoldingSpace)
+                isFlying = false;
+            if (isFlying)
+                force.y = _flySpeed * flySpeed;
             rb.velocity = force;
         }
     }
