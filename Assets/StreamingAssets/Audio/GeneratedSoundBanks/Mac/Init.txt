@@ -1,7 +1,11 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	3729505769	TimeOfDay			\Default Work Unit\TimeOfDay	
 	3800848640	PlayerStatus			\Default Work Unit\PlayerStatus	
 
 State	ID	Name	State Group			Notes
+	748895195	None	TimeOfDay			
+	1738206610	NightTime	TimeOfDay			
+	4206605382	DayTime	TimeOfDay			
 	655265632	Alive	PlayerStatus			
 	748895195	None	PlayerStatus			
 	2044049779	Dead	PlayerStatus			

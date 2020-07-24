@@ -32,6 +32,18 @@ namespace AK
             } // namespace STATE
         } // namespace PLAYERSTATUS
 
+        namespace TIMEOFDAY
+        {
+            static const AkUniqueID GROUP = 3729505769U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DAYTIME = 4206605382U;
+                static const AkUniqueID NIGHTTIME = 1738206610U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace TIMEOFDAY
+
     } // namespace STATES
 
     namespace GAME_PARAMETERS

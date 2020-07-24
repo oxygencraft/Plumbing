@@ -26,6 +26,10 @@
 							<ShortName>Level I - A\PlumbigGame_LevelI-A_Melody2.wav</ShortName>
 							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Melody2_834C3208.wem</Path>
 						</File>
+						<File Id="218464251" Language="SFX">
+							<ShortName>NightTime_Shimering2.wav</ShortName>
+							<Path>SFX/NightTime_Shimering2_834C3208.wem</Path>
+						</File>
 						<File Id="303993926" Language="SFX">
 							<ShortName>Level I - A\PlumbigGame_LevelI-A_KickCycleswav.wav</ShortName>
 							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_KickCycleswav_834C3208.wem</Path>
@@ -33,6 +37,14 @@
 						<File Id="310399170" Language="SFX">
 							<ShortName>Level I - A\PlumbigGame_LevelI-A_Synth Pulse.wav</ShortName>
 							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Synth Pulse_834C3208.wem</Path>
+						</File>
+						<File Id="471576877" Language="SFX">
+							<ShortName>NightTime_Fireflies2.wav</ShortName>
+							<Path>SFX/NightTime_Fireflies2_834C3208.wem</Path>
+						</File>
+						<File Id="481178558" Language="SFX">
+							<ShortName>file0015-glued.wav.reapeaks.wav</ShortName>
+							<Path>SFX/file0015-glued.wav.reapeaks_834C3208.wem</Path>
 						</File>
 						<File Id="643544157" Language="SFX">
 							<ShortName>MFGJ_Intro_CymbalRoll_140bpm_4-4_L16M-P1.wav</ShortName>
@@ -58,6 +70,10 @@
 							<ShortName>Level I - A\PlumbigGame_LevelI-A_Kick.wav</ShortName>
 							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Kick_834C3208.wem</Path>
 						</File>
+						<File Id="872774364" Language="SFX">
+							<ShortName>NightTime_Metals.wav</ShortName>
+							<Path>SFX/NightTime_Metals_834C3208.wem</Path>
+						</File>
 						<File Id="890896381" Language="SFX">
 							<ShortName>Level I - A\PlumbigGame_LevelI-A_Andromeda.wav</ShortName>
 							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Andromeda_834C3208.wem</Path>
@@ -66,34 +82,63 @@
 							<ShortName>Level I - A\PlumbigGame_LevelI-A_Melody.wav</ShortName>
 							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Melody_834C3208.wem</Path>
 						</File>
+						<File Id="1073042269" Language="SFX">
+							<ShortName>NightTime_Fireflies.wav</ShortName>
+							<Path>SFX/NightTime_Fireflies_834C3208.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{869F4E27-2297-43D0-9754-75BD70788E09}">
-							<Media>
-								<File Id="812424822"/>
-								<File Id="842378591"/>
-								<File Id="903030614"/>
-								<File Id="762508165"/>
-								<File Id="643544157"/>
-								<File Id="812424822"/>
-								<File Id="303993926"/>
-								<File Id="41513658"/>
-								<File Id="842378591"/>
-								<File Id="154771792"/>
-								<File Id="903030614"/>
-								<File Id="310399170"/>
-								<File Id="807324252"/>
-								<File Id="643544157"/>
-								<File Id="890896381"/>
-								<File Id="643544157"/>
-								<File Id="154771792"/>
-								<File Id="903030614"/>
-							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{9F51A0F3-2D08-4E34-BEEA-E17AA36AB810}">
+									<Media>
+										<File Id="812424822"/>
+										<File Id="842378591"/>
+										<File Id="903030614"/>
+										<File Id="762508165"/>
+										<File Id="643544157"/>
+										<File Id="812424822"/>
+										<File Id="303993926"/>
+										<File Id="41513658"/>
+										<File Id="842378591"/>
+										<File Id="154771792"/>
+										<File Id="903030614"/>
+										<File Id="310399170"/>
+										<File Id="807324252"/>
+										<File Id="643544157"/>
+										<File Id="890896381"/>
+										<File Id="643544157"/>
+										<File Id="154771792"/>
+										<File Id="903030614"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{869F4E27-2297-43D0-9754-75BD70788E09}">
+							<Children>
+								<SwitchContainer SwitchValue="{6BB28AF0-099F-40B2-956A-C253AA5EAFDC}">
+									<Media>
+										<File Id="1073042269"/>
+										<File Id="471576877"/>
+										<File Id="872774364"/>
+										<File Id="842378591"/>
+										<File Id="218464251"/>
+										<File Id="481178558"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{9C314D16-0C49-4638-A461-8FA3EECC35C2}">
-							<Media>
-								<File Id="728620653"/>
-							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{6BB28AF0-099F-40B2-956A-C253AA5EAFDC}">
+									<Media>
+										<File Id="728620653"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9C314D16-0C49-4638-A461-8FA3EECC35C2}">
+							<Children/>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -120,6 +165,13 @@
 				<GameParameter Id="3223332851" Name="AmountOfWater" ObjectPath="\Game Parameters\Default Work Unit\AmountOfWater"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="3729505769" Name="TimeOfDay" ObjectPath="\States\Default Work Unit\TimeOfDay">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\TimeOfDay\None"/>
+						<State Id="4206605382" Name="DayTime" ObjectPath="\States\Default Work Unit\TimeOfDay\DayTime"/>
+						<State Id="1738206610" Name="NightTime" ObjectPath="\States\Default Work Unit\TimeOfDay\NightTime"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="3800848640" Name="PlayerStatus" ObjectPath="\States\Default Work Unit\PlayerStatus">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerStatus\None"/>

@@ -22,6 +22,7 @@ public class MetaballManager : MonoBehaviour
     private bool jump = false;
     private bool isFlying = false;
     private float _flySpeed = 0f;
+    public AK.Wwise.RTPC speedOfWaterRTPC;
 
     
     void Awake()
@@ -186,6 +187,7 @@ public class MetaballManager : MonoBehaviour
         if (speedChange != 0 && !(movementSpeed + speedChange <= 0))
             movementSpeed += speedChange * 0.09f;
         waterSpeed = movementSpeed;
+        speedOfWaterRTPC.SetGlobalValue(MetaballManager.waterSpeed);
     }
 
     public static void AddMetaball(Metaball2D metaball)

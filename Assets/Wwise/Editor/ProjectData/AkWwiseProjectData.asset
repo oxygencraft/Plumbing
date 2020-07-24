@@ -65,7 +65,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5063aa135b1e0343b1aaad1e655eb1f4
     GuidInternal: 
-    m_lastTime: -8586062938644775808
+    m_lastTime: -8586060533774775808
     List:
     - name: Music
       guid: 19236dd6edf71843b47b4e2d3de41719
@@ -108,7 +108,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 0c7140943e3ee546954ef58c88dd01c9
     GuidInternal: 
-    m_lastTime: -8586062547114775808
+    m_lastTime: -8586060537424775808
     List:
     - name: AmountOfWater
       guid: 03f0ab8ccd4df0418ae3ffbeec3d24cc
@@ -229,7 +229,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 9fc0bd155d8aea4099d7168386e8118f
     GuidInternal: 
-    m_lastTime: -8586062935774775808
+    m_lastTime: -8586060478354775808
     List:
     - name: PlayerStatus
       guid: d9e186ef2dee3449bb74dd1bbb55b20b
@@ -262,12 +262,43 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: TimeOfDay
+      guid: 4903aa337f4c57469eac148b652c4fe2
+      id: 3729505769
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TimeOfDay
+        ObjectType: 9
+      Path: Default Work Unit/TimeOfDay
+      values:
+      - name: DayTime
+        guid: f3a0519f082d344ebeeae17aa36ab810
+        id: 4206605382
+        PathAndIcons:
+        - ElementName: DayTime
+          ObjectType: 8
+      - name: NightTime
+        guid: f08ab26b9f09b240956ac253aa5eafdc
+        id: 1738206610
+        PathAndIcons:
+        - ElementName: NightTime
+          ObjectType: 8
+      - name: None
+        guid: b2d19c2e264df643a26c2512ca84b705
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPath: Default Work Unit
     guid: 79aea8d535274e41966af22185345b84
     GuidInternal: 
-    m_lastTime: -8586066367044775808
+    m_lastTime: -8586060478354775808
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
@@ -278,7 +309,7 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Plumbing_WaterGame
-  - /Plumbing_WaterGame/Events
-  - /Plumbing_WaterGame/Events/Default Work Unit
+  - /Plumbing_WaterGame/States
+  - /Plumbing_WaterGame/States/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
