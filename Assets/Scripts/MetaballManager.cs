@@ -5,71 +5,135 @@ using UnityEngine.UI;
 
 public class MetaballManager : MonoBehaviour
 {
+    // List of metaballs (see metaball management methods for adding, removing or getting the list)
     private static List<Metaball2D> metaballs = new List<Metaball2D>();
 
     #region Settings/Public variables
+    public static float waterSpeed; // Static version of movementSpeed for RTPC
+
+    [Header("Movement/controls settings")]
+    public bool move = false;
+    public bool control = false;
+    [Space(10f)]
     public float defaultMovementSpeed = 200f;
     public float movementSpeed;
+    [Space(10f)]
     public float jumpForce = 0.85f;
     public int jumpIterations = 4;
+    [Space(5f)]
     public float flySpeed = 0.1f;
+    [Space(10f)]
     public float timeUntilMove = 2.5f;
     public float timeUntilControlsEnable = 5.5f;
-    public int waterInfluencingAbility = 100;
-    public int pointsUntilInfluencingAbilityDecrease = 550;
-    public int maxWaterInfluencingAbility = 100;
+
+    [Header("Water Influencing Ability Settings")]
+    [Tooltip("If disabled, the controls will not be disabled")]
+    public bool enabled = true;
+    public int waterInfluencingAbility = 200;
+    public float pointsUntilInfluencingAbilityDecrease = 1000f;
+    public int maxWaterInfluencingAbility = 200;
+    public int maxWaterInfluencingAbilityGiven = 4;
+    public int chanceToNotGetInfluencingAbility = 11;
     public Slider waterInfluencingAbilityMeter;
-    public static float waterSpeed; // Static version of movementSpeed for RPTC
+
+    [Space(10f)]
+
+    public float changeSpeedPoints = 5f;
+    public float flyPoints = 20f;
+
+    [Header("Misc")]
+    public AK.Wwise.RTPC speedOfWaterRTPC;
     #endregion
 
     #region Internal variables
-    private bool allowMove = false;
-    private bool allowControl = false;
+    private float influencingPoints;
 
     private float speedChange = 0f;
     private bool jump = false;
     private bool isFlying = false;
     private float _flySpeed = 0f;
-    public AK.Wwise.RTPC speedOfWaterRTPC;
     #endregion
 
+    // Awake method is to setup the metaball manager
     void Awake()
     {
         movementSpeed = defaultMovementSpeed;
+        influencingPoints = pointsUntilInfluencingAbilityDecrease;
         Invoke("AllowMove", timeUntilMove);
         Invoke("EnableControls", timeUntilControlsEnable);
     }
 
+    // Enable or disable methods (controls and movement) in this region
     #region Enable/Disable methods
     public void EnableControls()
     {
-        allowControl = true;
+        control = true;
     }
 
     public void DisableControls()
     {
-        allowControl = false;
+        control = false;
     }
 
     public void AllowMove()
     {
-        allowMove = true;
+        move = true;
     }
 
     public void DisallowMove()
     {
-        allowMove = false;
+        move = false;
+    }
+    #endregion
+
+    // Methods related to the influencing ability system
+    #region Influencing ability system
+    public void SubtractPoints(float points)
+    {
+        influencingPoints -= points * Time.deltaTime;
+        //Debug.Log(influencingPoints);
+        if (influencingPoints <= 0)
+        {
+            influencingPoints = pointsUntilInfluencingAbilityDecrease;
+            waterInfluencingAbility--;
+            waterInfluencingAbilityMeter.value = waterInfluencingAbility;
+        }
+
+        if (waterInfluencingAbility <= 0 && enabled)
+        {
+            DisableControls();
+            speedChange = 0f;
+            isFlying = false;
+            flySpeed = 0f;
+        }
+    }
+
+    public void AddInfluencingAbility()
+    {
+        if (!ShouldGiveInfluencingAbility())
+            return;
+        if (waterInfluencingAbility == 0)
+            EnableControls();
+        waterInfluencingAbility += Random.Range(1, maxWaterInfluencingAbilityGiven);
+        if (waterInfluencingAbility > maxWaterInfluencingAbility)
+            waterInfluencingAbility = maxWaterInfluencingAbility;
+        waterInfluencingAbilityMeter.value = waterInfluencingAbility;
+    }
+
+    private bool ShouldGiveInfluencingAbility()
+    {
+        return Random.Range(0, chanceToNotGetInfluencingAbility) != 0;
     }
     #endregion
 
     private bool isHoldingSpace = false;
 
-    #region Input callbacks
-    // Get input from the controls in the next four methods
+    // Get input from the controls in this region
     // Do not do this in FixedUpdate or Update
+    #region Input callbacks
     public void OnSpeed(InputAction.CallbackContext context)
     {
-        if (!allowControl)
+        if (!control)
             return;
         //Debug.Log(context.action.phase);
         if (context.action.phase == InputActionPhase.Canceled)
@@ -87,15 +151,15 @@ public class MetaballManager : MonoBehaviour
 
     public void OnSpace(InputAction.CallbackContext context)
     {
-        if (!allowControl)
+        if (!control)
             return;
         if (context.canceled)
         {
-            Debug.Log("Space Cancelled!");
+            // Debug.Log("Space Cancelled!");
             isHoldingSpace = false;
             return;
         }
-        Debug.Log("Space!");
+        //Debug.Log("Space!");
 
         isHoldingSpace = true;
         Invoke("PerformSpaceAction", 0.2f);
@@ -103,12 +167,13 @@ public class MetaballManager : MonoBehaviour
 
     #endregion
 
+    // Do something with the inputs if needed to be handled separately from callbacks
     #region Input actions
     private void PerformSpaceAction()
     {
         if (!isHoldingSpace)
         {
-            Debug.Log("Jumping!");
+            //Debug.Log("Jumping!");
             OnJump();
             return;
         }
@@ -122,29 +187,31 @@ public class MetaballManager : MonoBehaviour
     {
         if (!isHoldingSpace)
         {
-            Debug.Log("Flying Control Stopped!");
+            //Debug.Log("Flying Control Stopped!");
             preFlySpeed = canceled ? 0f : flySpeed;
             isFlying = false;
             return;
         }
         if (!isFlying)
         {
-            Debug.Log("Early Fly Start");
+            //Debug.Log("Early Fly Start");
             isFlying = true;
         }
 
         if (canceled)
         {
-            Debug.Log("Fly speed change canceled!");
+            //Debug.Log("Fly speed change canceled!");
             _flySpeed = 0f;
             return;
         }
         isFlying = true;
         _flySpeed = preFlySpeed != 0f ? preFlySpeed : flySpeed;
-        Debug.Log("Flying! Flying speed:" + _flySpeed + " PreFlySpeed:" + preFlySpeed);
+        preFlySpeed = 0f;
+        //Debug.Log("Flying! Flying speed:" + _flySpeed + " PreFlySpeed:" + preFlySpeed);
     }
     #endregion
 
+    // Code related to jumping (jumping is disabled at the moment)
     #region Jumping system
     public void OnJump()
     {
@@ -176,12 +243,13 @@ public class MetaballManager : MonoBehaviour
     private int jumpIteration = 0;
     #endregion
 
+    // Update and FixedUpdate methods where movement and changing speed is handled
     #region Update methods
     // Do not handle controls here, do that in Update
     // You can respond to velocity variables in here however
     void FixedUpdate()
     {
-        if (!allowMove)
+        if (!move)
             return;
         foreach (var metaball in metaballs)
         {
@@ -200,7 +268,12 @@ public class MetaballManager : MonoBehaviour
             if (!isHoldingSpace)
                 isFlying = false;
             if (isFlying)
+            {
                 force.y = _flySpeed * flySpeed;
+                SubtractPoints(flyPoints);
+            }
+            if (speedChange != 0f)
+                SubtractPoints(changeSpeedPoints);
             rb.velocity = force;
         }
     }
@@ -218,6 +291,7 @@ public class MetaballManager : MonoBehaviour
     }
     #endregion
 
+    // Add, remove or get metaballs from the list
     #region Metaball management methods
     public static void AddMetaball(Metaball2D metaball)
     {

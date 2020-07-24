@@ -982,7 +982,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &961241698
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1665,6 +1665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b8786c5fadcdfc4e9556d97a10b03b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  move: 0
+  control: 0
   defaultMovementSpeed: 7.25
   movementSpeed: 0
   jumpForce: 1.6
@@ -1672,15 +1674,20 @@ MonoBehaviour:
   flySpeed: 3.5
   timeUntilMove: 1
   timeUntilControlsEnable: 3.5
+  enabled: 1
+  waterInfluencingAbility: 200
+  pointsUntilInfluencingAbilityDecrease: 50
+  maxWaterInfluencingAbility: 200
+  maxWaterInfluencingAbilityGiven: 4
+  chanceToNotGetInfluencingAbility: 11
+  waterInfluencingAbilityMeter: {fileID: 2139024704}
+  changeSpeedPoints: 6.5
+  flyPoints: 16.5
   speedOfWaterRTPC:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 1743df0754afb4aa986dfddb58ca1633,
       type: 2}
-  waterInfluencingAbility: 150
-  pointsUntilInfluencingAbilityDecrease: 50
-  maxWaterInfluencingAbility: 150
-  waterInfluencingAbilityMeter: {fileID: 0}
 --- !u!4 &1225612549
 Transform:
   m_ObjectHideFlags: 0
@@ -2767,7 +2774,7 @@ GameObject:
   - component: {fileID: 1761310527}
   - component: {fileID: 1761310526}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Water Influencing Ability Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2789,8 +2796,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 379.2, y: 30}
-  m_SizeDelta: {x: 36.052643, y: 36.052643}
+  m_AnchoredPosition: {x: 382, y: 35.7}
+  m_SizeDelta: {x: 24.647968, y: 24.647968}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761310526
 MonoBehaviour:
@@ -2811,7 +2818,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: f9f0679d75255bc48a7cacfa56e421eb, type: 3}
+  m_Texture: {fileID: 2800000, guid: 3a7397ff3c936b7408e8101a5c42aae1, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -3333,7 +3340,7 @@ GameObject:
   - component: {fileID: 2139024703}
   - component: {fileID: 2139024704}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Water Influencing Ability Meter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3405,9 +3412,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 200
   m_WholeNumbers: 1
-  m_Value: 100
+  m_Value: 200
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
