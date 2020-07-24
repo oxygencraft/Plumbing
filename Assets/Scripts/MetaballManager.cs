@@ -1,11 +1,13 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class MetaballManager : MonoBehaviour
 {
     private static List<Metaball2D> metaballs = new List<Metaball2D>();
 
+    #region Settings/Public variables
     public float defaultMovementSpeed = 200f;
     public float movementSpeed;
     public float jumpForce = 0.85f;
@@ -13,8 +15,14 @@ public class MetaballManager : MonoBehaviour
     public float flySpeed = 0.1f;
     public float timeUntilMove = 2.5f;
     public float timeUntilControlsEnable = 5.5f;
-    public static float waterSpeed;
+    public int waterInfluencingAbility = 100;
+    public int pointsUntilInfluencingAbilityDecrease = 550;
+    public int maxWaterInfluencingAbility = 100;
+    public Slider waterInfluencingAbilityMeter;
+    public static float waterSpeed; // Static version of movementSpeed for RPTC
+    #endregion
 
+    #region Internal variables
     private bool allowMove = false;
     private bool allowControl = false;
 
@@ -23,8 +31,8 @@ public class MetaballManager : MonoBehaviour
     private bool isFlying = false;
     private float _flySpeed = 0f;
     public AK.Wwise.RTPC speedOfWaterRTPC;
+    #endregion
 
-    
     void Awake()
     {
         movementSpeed = defaultMovementSpeed;
@@ -32,16 +40,31 @@ public class MetaballManager : MonoBehaviour
         Invoke("EnableControls", timeUntilControlsEnable);
     }
 
-    void EnableControls()
+    #region Enable/Disable methods
+    public void EnableControls()
     {
         allowControl = true;
     }
 
-    void AllowMove()
+    public void DisableControls()
+    {
+        allowControl = false;
+    }
+
+    public void AllowMove()
     {
         allowMove = true;
     }
 
+    public void DisallowMove()
+    {
+        allowMove = false;
+    }
+    #endregion
+
+    private bool isHoldingSpace = false;
+
+    #region Input callbacks
     // Get input from the controls in the next four methods
     // Do not do this in FixedUpdate or Update
     public void OnSpeed(InputAction.CallbackContext context)
@@ -57,8 +80,10 @@ public class MetaballManager : MonoBehaviour
         speedChange = context.ReadValue<float>();
     }
 
-    private bool isHoldingSpace = false;
-    private bool pressedSpace = false;
+    public void OnFly(InputAction.CallbackContext context)
+    {
+        Fly(context.ReadValue<float>(), context.canceled);
+    }
 
     public void OnSpace(InputAction.CallbackContext context)
     {
@@ -76,6 +101,9 @@ public class MetaballManager : MonoBehaviour
         Invoke("PerformSpaceAction", 0.2f);
     }
 
+    #endregion
+
+    #region Input actions
     private void PerformSpaceAction()
     {
         if (!isHoldingSpace)
@@ -86,11 +114,6 @@ public class MetaballManager : MonoBehaviour
         }
         if (!isFlying)
             Fly(0f);
-    }
-
-    public void OnFly(InputAction.CallbackContext context)
-    {
-        Fly(context.ReadValue<float>(), context.canceled);
     }
 
     private float preFlySpeed = 0f;
@@ -120,7 +143,9 @@ public class MetaballManager : MonoBehaviour
         _flySpeed = preFlySpeed != 0f ? preFlySpeed : flySpeed;
         Debug.Log("Flying! Flying speed:" + _flySpeed + " PreFlySpeed:" + preFlySpeed);
     }
+    #endregion
 
+    #region Jumping system
     public void OnJump()
     {
         // I give up for now so I'm disabling jump
@@ -149,7 +174,9 @@ public class MetaballManager : MonoBehaviour
     // You need to apply velocity force more than one time in order for water to jump
     // This is a jump iteration system to make it apply force several times
     private int jumpIteration = 0;
+    #endregion
 
+    #region Update methods
     // Do not handle controls here, do that in Update
     // You can respond to velocity variables in here however
     void FixedUpdate()
@@ -189,7 +216,9 @@ public class MetaballManager : MonoBehaviour
         waterSpeed = movementSpeed;
         speedOfWaterRTPC.SetGlobalValue(MetaballManager.waterSpeed);
     }
+    #endregion
 
+    #region Metaball management methods
     public static void AddMetaball(Metaball2D metaball)
     {
         metaballs.Add(metaball);
@@ -212,4 +241,5 @@ public class MetaballManager : MonoBehaviour
             catch (System.NullReferenceException) { }
         }
     }
+    #endregion
 }
