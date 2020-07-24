@@ -311,5 +311,6 @@ MonoBehaviour:
   - /Plumbing_WaterGame
   - /Plumbing_WaterGame/States
   - /Plumbing_WaterGame/States/Default Work Unit
+  - /Plumbing_WaterGame/States/Default Work Unit/TimeOfDay
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
