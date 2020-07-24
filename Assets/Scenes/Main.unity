@@ -2086,6 +2086,7 @@ GameObject:
   - component: {fileID: 1516875460}
   - component: {fileID: 1516875465}
   - component: {fileID: 1516875464}
+  - component: {fileID: 1516875466}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -2272,6 +2273,31 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0903a3e34832944f7a7610f1d999988f,
+      type: 2}
+  valueIdInternal: 0
+  groupIdInternal: 0
+  valueGuidInternal: 
+  groupGuidInternal: 
+--- !u!114 &1516875466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516875458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670bb59b0e789498dac5c4d1954e4807, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 599ff9384ad8b488e85a265ce079cbcd,
       type: 2}
   valueIdInternal: 0
   groupIdInternal: 0
