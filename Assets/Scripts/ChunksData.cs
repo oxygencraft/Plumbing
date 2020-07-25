@@ -8,6 +8,7 @@ public class ChunksData : ScriptableObject
 {
     public Material allChunkMaterial;
     public List<GameObject> obstacles;
+    public List<GameObject> obstacleProjectiles;
     public List<ChunkGroup> chunkGroups;
     public List<ChunkConnectorGroup> chunkConnectorGroups;
 

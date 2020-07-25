@@ -1,6 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 public class WaterDropper : MonoBehaviour
@@ -22,13 +20,13 @@ public class WaterDropper : MonoBehaviour
     {
         for (;;)
         {
-            Debug.Log("Spawn considered!", this);
+            //Debug.Log("Spawn considered!", this);
             int r = Random.Range(0, 101);
             if (r <= chance && !firstTime)
             {
                 StartCoroutine(SpawnWater(Random.Range(5, 18)));
             }
-            Debug.Log("First time: " + firstTime);
+            //Debug.Log("First time: " + firstTime);
             firstTime = false;
             yield return new WaitForSeconds(considerEverySeconds);
         }
@@ -36,7 +34,7 @@ public class WaterDropper : MonoBehaviour
 
     IEnumerator SpawnWater(int count)
     {
-        Debug.Log("Spawning!", this);
+        //Debug.Log("Spawning!", this);
         for (int i = 0; i < count; i++)
         {
             GameObject metaball;

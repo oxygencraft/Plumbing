@@ -10,8 +10,8 @@ public class Obstacle : MonoBehaviour
     {
        
         if (collision.gameObject.layer != 8)
-            return;   
-            FindObjectOfType<MetaballManager>().AddInfluencingAbility();
+            return;
+        FindObjectOfType<MetaballManager>().AddInfluencingAbility();
         WaterCollides.Post(gameObject);
         Destroy(collision.gameObject);
     }

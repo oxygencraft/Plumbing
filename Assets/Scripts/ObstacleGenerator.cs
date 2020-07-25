@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Runtime.Remoting.Messaging;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ObstacleGenerator : MonoBehaviour
 {
@@ -23,6 +20,7 @@ public class ObstacleGenerator : MonoBehaviour
         var objectPosition = new Vector2(Random.Range(x - 5f, x + 5f), 5f);
         var obstacleGen = new GameObject("Obstacle Generator Object");
         obstacleGen.transform.position = objectPosition;
+        obstacleGen.transform.SetParent(transform.parent);
         obstacleGen.layer = 10;
         obstacleGen.AddComponent<CircleCollider2D>();
         var rb = obstacleGen.AddComponent<Rigidbody2D>();

@@ -18,6 +18,10 @@ MonoBehaviour:
   - {fileID: 3330237505724861347, guid: 4fda908719a10d546a744fec08377d22, type: 3}
   - {fileID: 1087673521149206217, guid: 2ab156b2870ddc142a66c5d8adceb425, type: 3}
   - {fileID: 102356354408839723, guid: 3b7b0d58cc76e7c48bccf890a2b1adce, type: 3}
+  obstacleProjectiles:
+  - {fileID: 1164802345381073807, guid: d7a0116c60f25c54fb44fe0497b4a665, type: 3}
+  - {fileID: 5466389760652482634, guid: 706f51a5aa97cb541a145f67515bf53b, type: 3}
+  - {fileID: 4082349496496698056, guid: 0a139c63d145dde42b3cba078a1484dd, type: 3}
   chunkGroups:
   - name: Desert
     chunks:
