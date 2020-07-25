@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4756059490644661720}
   - component: {fileID: -2906596237351691254}
   - component: {fileID: -6260733172853714111}
-  - component: {fileID: 3160788194767322574}
   m_Layer: 0
   m_Name: Bush2
   m_TagString: Untagged
@@ -96,6 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c69bf9fc64844783baa334308dc24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaterCollides:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 07f96f943b8de47c48bee662c0d7c0cd,
+      type: 2}
 --- !u!60 &-6260733172853714111
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -220,15 +224,3 @@ PolygonCollider2D:
       - {x: -0.78999996, y: -2.715}
       - {x: 0.66999996, y: -2.715}
       - {x: 0.68, y: -2.705}
---- !u!114 &3160788194767322574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3330237505724861347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8de020a8bf984940b658421c7bee4cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

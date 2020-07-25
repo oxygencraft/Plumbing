@@ -40,7 +40,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c14bdfeed3909144a4e7ffc9fb9cfae1
     GuidInternal: 
-    m_lastTime: -8586062930284775808
+    m_lastTime: -8586059417084775808
     List:
     - name: General
       guid: 8e8cca407ca4f2438a925027b36c4e58
@@ -65,8 +65,20 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5063aa135b1e0343b1aaad1e655eb1f4
     GuidInternal: 
-    m_lastTime: -8586060533774775808
+    m_lastTime: -8586059417084775808
     List:
+    - name: Hit_Obstacle
+      guid: e28864eebfa0a547a4929203f38b9f45
+      id: 1183362788
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Hit_Obstacle
+        ObjectType: 3
+      Path: Default Work Unit/Hit_Obstacle
+      maxAttenuation: 0
+      maxDuration: 2.623855
+      minDuration: 2.476795
     - name: Music
       guid: 19236dd6edf71843b47b4e2d3de41719
       id: 3991942870
@@ -309,8 +321,7 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Plumbing_WaterGame
-  - /Plumbing_WaterGame/States
-  - /Plumbing_WaterGame/States/Default Work Unit
-  - /Plumbing_WaterGame/States/Default Work Unit/TimeOfDay
+  - /Plumbing_WaterGame/Events
+  - /Plumbing_WaterGame/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

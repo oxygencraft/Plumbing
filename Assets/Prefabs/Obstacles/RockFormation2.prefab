@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3434154828388236771}
   - component: {fileID: 248855439733885798}
   - component: {fileID: -7653640942898975456}
-  - component: {fileID: 7016429007141724944}
   m_Layer: 0
   m_Name: RockFormation2
   m_TagString: Untagged
@@ -96,6 +95,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb1c69bf9fc64844783baa334308dc24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WaterCollides:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 07f96f943b8de47c48bee662c0d7c0cd,
+      type: 2}
 --- !u!60 &-7653640942898975456
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -188,15 +192,3 @@ PolygonCollider2D:
       - {x: 1.0799999, y: -1.8}
       - {x: 1.18, y: -1.77}
       - {x: 1.31, y: -1.73}
---- !u!114 &7016429007141724944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102356354408839723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8de020a8bf984940b658421c7bee4cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
