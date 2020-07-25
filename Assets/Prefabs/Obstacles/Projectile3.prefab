@@ -100,7 +100,8 @@ MonoBehaviour:
   WaterCollides:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 07f96f943b8de47c48bee662c0d7c0cd,
+      type: 2}
   rigidbody: {fileID: 7097504250903831268}
   collisionsUntilDestroy: 2
 --- !u!60 &2307631263124411928

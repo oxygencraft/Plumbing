@@ -65,7 +65,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5063aa135b1e0343b1aaad1e655eb1f4
     GuidInternal: 
-    m_lastTime: -8586059417084775808
+    m_lastTime: -8586059015224775808
     List:
     - name: Hit_Obstacle
       guid: e28864eebfa0a547a4929203f38b9f45
@@ -103,6 +103,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: StopMusic
+      guid: 42f319904ebab74bbde64a8072e4f46b
+      id: 1917263390
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: StopMusic
+        ObjectType: 3
+      Path: Default Work Unit/StopMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Water
       guid: 1695c64276ebb547899c27ce3a20c38b
       id: 2654748154

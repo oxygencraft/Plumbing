@@ -10,5 +10,5 @@
   <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
   <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2019.2.4.7329/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows />
-  <WwiseProjectPath>../../../Spring_2020/Videogames/Watergame/Plumbing_WaterGame/Plumbing_WaterGame.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../../Spring_2020/Videogames/Watergame/WaterGameWwise/WaterGameWWise/Plumbing_WaterGame/Plumbing_WaterGame.wproj</WwiseProjectPath>
 </WwiseSettings>

@@ -20,11 +20,11 @@
 					<IncludedMemoryFiles>
 						<File Id="590244001" Language="SFX">
 							<ShortName>LoseWater2.wav</ShortName>
-							<Path>SFX/LoseWater2_9A1B448F.wem</Path>
+							<Path>SFX/LoseWater2_32819558.wem</Path>
 						</File>
 						<File Id="1000543821" Language="SFX">
 							<ShortName>LoseWater1.wav</ShortName>
-							<Path>SFX/LoseWater1_B03AD52E.wem</Path>
+							<Path>SFX/LoseWater1_5699163B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
