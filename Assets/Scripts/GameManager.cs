@@ -9,12 +9,14 @@ public class GameManager : MonoBehaviour
     public TransformMovement backgroundMovement;
     public TransformMovement environmentGenMovement;
     public Transform metaballParent;
+    public WaterDropper waterDropper;
     public bool mainMenu = false;
 
     public void LoseGame()
     {
         if (mainMenu || cameraMovement == null || backgroundMovement == null || environmentGenMovement == null || loseUI == null)
             return;
+        waterDropper.StopAllCoroutines();
         loseUI.SetActive(true);
         backgroundMovement.enabled = false;
         cameraMovement.enabled = false;
