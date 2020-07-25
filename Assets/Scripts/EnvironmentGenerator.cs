@@ -38,22 +38,9 @@ public class EnvironmentGenerator : MonoBehaviour
 
     private void CreateNextChunk(bool moveObject = false)
     {
-        //GameObject chunk = new GameObject("Chunk " + currentChunkGroup.name);
         GameObject chunk = Instantiate(nextChunk.prefab);
         chunk.layer = layer;
         chunk.transform.position = nextLocation;
-        /*var spriteRenderer = chunk.AddComponent<SpriteRenderer>();
-        spriteRenderer.sprite = nextChunk.sprite;
-        Material spriteMaterial = null;
-        if (chunks.allChunkMaterial != null)
-            spriteMaterial = chunks.allChunkMaterial;
-        if (nextChunk.material != null)
-            spriteMaterial = nextChunk.material;
-        if (spriteMaterial != null)
-            spriteRenderer.material = spriteMaterial;
-        var selfDestruct = chunk.AddComponent<SelfDestruct>();
-        selfDestruct.timeUntilSelfDestruct = nextChunk.timeUntilSelfDestruct;
-        */
         chunk.transform.SetParent(parent);
         nextLocation.x += nextChunk.positionIncrement;
         if (moveObject)
@@ -61,6 +48,10 @@ public class EnvironmentGenerator : MonoBehaviour
             Vector3 position = transform.position;
             position.x += nextChunk.positionIncrement;
             transform.position = position;
+        }
+        else
+        {
+            CreateObstacleGenerator(chunk.transform);
         }
 
         if (currentChunkGroup.chunks.Count == ++chunkGroupIndex)
@@ -73,6 +64,14 @@ public class EnvironmentGenerator : MonoBehaviour
         {
             nextChunk = currentChunkGroup.chunks[chunkGroupIndex];
         }
+    }
+
+    private void CreateObstacleGenerator(Transform parent)
+    {
+        GameObject generator = new GameObject("Obstacle Generator");
+        generator.transform.SetParent(parent);
+        ObstacleGenerator og = generator.AddComponent<ObstacleGenerator>();
+        og.chunksData = chunks;
     }
 
     private void GetNextChunkGroup()

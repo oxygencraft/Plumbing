@@ -13,6 +13,11 @@ MonoBehaviour:
   m_Name: Chunks Data
   m_EditorClassIdentifier: 
   allChunkMaterial: {fileID: 0}
+  obstacles:
+  - {fileID: 2014035411204366310, guid: ca908fd97a9f38149a66c017f8206138, type: 3}
+  - {fileID: 3330237505724861347, guid: 4fda908719a10d546a744fec08377d22, type: 3}
+  - {fileID: 1087673521149206217, guid: 2ab156b2870ddc142a66c5d8adceb425, type: 3}
+  - {fileID: 102356354408839723, guid: 3b7b0d58cc76e7c48bccf890a2b1adce, type: 3}
   chunkGroups:
   - name: Desert
     chunks:

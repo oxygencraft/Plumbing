@@ -90,7 +90,10 @@ public class MetaballManager : MonoBehaviour
     #region Influencing ability system
     public void SubtractPoints(float points)
     {
-        influencingPoints -= points * Time.deltaTime;
+        float decrease = points;
+        if (metaballs.Count <= 20)
+            decrease += 100 / metaballs.Count;
+        influencingPoints -= decrease * Time.deltaTime;
         //Debug.Log(influencingPoints);
         if (influencingPoints <= 0)
         {
@@ -104,7 +107,7 @@ public class MetaballManager : MonoBehaviour
             DisableControls();
             speedChange = 0f;
             isFlying = false;
-            flySpeed = 0f;
+            _flySpeed = 0f;
         }
     }
 
@@ -112,8 +115,7 @@ public class MetaballManager : MonoBehaviour
     {
         if (!ShouldGiveInfluencingAbility())
             return;
-        if (waterInfluencingAbility == 0)
-            EnableControls();
+        EnableControls();
         waterInfluencingAbility += Random.Range(1, maxWaterInfluencingAbilityGiven);
         if (waterInfluencingAbility > maxWaterInfluencingAbility)
             waterInfluencingAbility = maxWaterInfluencingAbility;

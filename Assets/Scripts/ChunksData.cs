@@ -7,6 +7,7 @@ using UnityEngine;
 public class ChunksData : ScriptableObject
 {
     public Material allChunkMaterial;
+    public List<GameObject> obstacles;
     public List<ChunkGroup> chunkGroups;
     public List<ChunkConnectorGroup> chunkConnectorGroups;
 
