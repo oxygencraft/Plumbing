@@ -147,23 +147,40 @@ public class MetaballManager : MonoBehaviour
         speedChange = context.ReadValue<float>();
     }
 
+    public bool nonSpaceFly = false;
+
     public void OnFly(InputAction.CallbackContext context)
     {
-        Fly(context.ReadValue<float>(), context.canceled);
+        float value = context.ReadValue<float>();
+        if (value == 1f && !isHoldingSpace)
+        {
+            nonSpaceFly = true;
+        }
+        Debug.Log("Non space fly: " + nonSpaceFly);
+        if (value == -1f && nonSpaceFly)
+            return;
+        if (context.canceled && nonSpaceFly)
+        {
+            Fly(1000f, true);
+            nonSpaceFly = false;
+        }
+        Fly(value, context.canceled);
     }
 
     public void OnSpace(InputAction.CallbackContext context)
     {
         if (!control)
             return;
+        if (nonSpaceFly)
+            return;
         if (context.canceled)
         {
-            // Debug.Log("Space Cancelled!");
+            //Debug.Log("Space Cancelled!");
             isHoldingSpace = false;
             return;
         }
         //Debug.Log("Space!");
-
+        //OnJump();
         isHoldingSpace = true;
         Invoke("PerformSpaceAction", 0.2f);
     }
@@ -188,7 +205,7 @@ public class MetaballManager : MonoBehaviour
 
     private void Fly(float flySpeed, bool canceled = false)
     {
-        if (!isHoldingSpace)
+        if (!isHoldingSpace && !nonSpaceFly)
         {
             //Debug.Log("Flying Control Stopped!");
             preFlySpeed = canceled ? 0f : flySpeed;
@@ -201,12 +218,19 @@ public class MetaballManager : MonoBehaviour
             isFlying = true;
         }
 
+        if (canceled && flySpeed == 1000f)
+        {
+            _flySpeed = 0f;
+            isFlying = false;
+            return;
+        }
         if (canceled)
         {
             //Debug.Log("Fly speed change canceled!");
             _flySpeed = 0f;
             return;
         }
+
         isFlying = true;
         _flySpeed = preFlySpeed != 0f ? preFlySpeed : flySpeed;
         preFlySpeed = 0f;
@@ -268,7 +292,7 @@ public class MetaballManager : MonoBehaviour
                 }
             }
             Vector2 force = new Vector2(movementSpeed, rb.velocity.y + _jumpForce);
-            if (!isHoldingSpace)
+            if (!isHoldingSpace && !nonSpaceFly)
                 isFlying = false;
             if (isFlying)
             {

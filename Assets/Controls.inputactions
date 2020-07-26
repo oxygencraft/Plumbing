@@ -120,8 +120,8 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
-                    "id": "6f46f036-4ae3-4cf8-b6dd-592a0e0a2ebe",
+                    "name": "Negative",
+                    "id": "5e3f748c-bb13-41fd-b627-92124927be7a",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -131,8 +131,8 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
-                    "id": "5e3f748c-bb13-41fd-b627-92124927be7a",
+                    "name": "Positive",
+                    "id": "9ab03fa0-765b-4d4f-97a5-84c4c64d6b3d",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -153,8 +153,8 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
-                    "id": "3c7b1813-a8cf-4b03-bad3-d02be1ca6926",
+                    "name": "Negative",
+                    "id": "753c8b60-3592-49b8-a779-03df7f7b894c",
                     "path": "<Keyboard>/downArrow",
                     "interactions": "",
                     "processors": "",
@@ -164,8 +164,8 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
-                    "id": "753c8b60-3592-49b8-a779-03df7f7b894c",
+                    "name": "Positive",
+                    "id": "b90dd61e-d846-4517-bcd5-3d54fe3d6019",
                     "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
