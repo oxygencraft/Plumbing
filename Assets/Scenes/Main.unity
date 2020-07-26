@@ -1993,6 +1993,7 @@ MonoBehaviour:
   control: 0
   defaultMovementSpeed: 7.25
   movementSpeed: 0
+  changeSpeedSpeed: 0.1
   jumpForce: 1.6
   jumpIterations: 50
   flySpeed: 3.5
@@ -2005,8 +2006,8 @@ MonoBehaviour:
   maxWaterInfluencingAbilityGiven: 6
   chanceToNotGetInfluencingAbility: 11
   waterInfluencingAbilityMeter: {fileID: 2139024704}
-  changeSpeedPoints: 6.5
-  flyPoints: 16.5
+  changeSpeedPoints: 5.75
+  flyPoints: 14
   speedOfWaterRTPC:
     idInternal: 0
     valueGuidInternal: 

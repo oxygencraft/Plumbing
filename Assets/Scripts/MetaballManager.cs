@@ -17,6 +17,7 @@ public class MetaballManager : MonoBehaviour
     [Space(10f)]
     public float defaultMovementSpeed = 200f;
     public float movementSpeed;
+    public float changeSpeedSpeed = 0.1f;
     [Space(10f)]
     public float jumpForce = 0.85f;
     public int jumpIterations = 4;
@@ -287,7 +288,7 @@ public class MetaballManager : MonoBehaviour
     void Update()
     {
         if (speedChange != 0 && !(movementSpeed + speedChange <= 0))
-            movementSpeed += speedChange * 0.09f;
+            movementSpeed += speedChange * changeSpeedSpeed;
         waterSpeed = movementSpeed;
         speedOfWaterRTPC.SetGlobalValue(MetaballManager.waterSpeed);
     }
