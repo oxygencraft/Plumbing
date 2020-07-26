@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID HIT_OBSTACLE = 1183362788U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYERISDEAD = 4073605608U;
+        static const AkUniqueID STOPMUSICANDWATER = 2875365230U;
         static const AkUniqueID WATER = 2654748154U;
     } // namespace EVENTS
 
@@ -27,23 +28,12 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID ALIVE = 655265632U;
-                static const AkUniqueID DEAD = 2044049779U;
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace PLAYERSTATUS
-
-        namespace TIMEOFDAY
-        {
-            static const AkUniqueID GROUP = 3729505769U;
-
-            namespace STATE
-            {
                 static const AkUniqueID DAYTIME = 4206605382U;
+                static const AkUniqueID DEAD = 2044049779U;
                 static const AkUniqueID NIGHTTIME = 1738206610U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
-        } // namespace TIMEOFDAY
+        } // namespace PLAYERSTATUS
 
     } // namespace STATES
 

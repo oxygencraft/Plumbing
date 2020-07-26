@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Spring_2020/Videogames/Watergame/Plumbing_WaterGame/</ProjectRoot>
-		<SourceFilesRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Spring_2020/Videogames/Watergame/Plumbing_WaterGame/.cache/Mac/</SourceFilesRoot>
+		<ProjectRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Spring_2020/Videogames/Watergame/WaterGameWwise/WaterGameWWise/Plumbing_WaterGame/</ProjectRoot>
+		<SourceFilesRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Spring_2020/Videogames/Watergame/WaterGameWwise/WaterGameWWise/Plumbing_WaterGame/.cache/Mac/</SourceFilesRoot>
 		<SoundBanksRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Plumbing/Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Spring_2020/Videogames/Watergame/Plumbing_WaterGame/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/Spring_2020/Videogames/Watergame/WaterGameWwise/WaterGameWWise/Plumbing_WaterGame/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -92,54 +92,57 @@
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{869F4E27-2297-43D0-9754-75BD70788E09}">
-							<Children>
-								<SwitchContainer SwitchValue="{9F51A0F3-2D08-4E34-BEEA-E17AA36AB810}">
-									<Media>
-										<File Id="218464251"/>
-										<File Id="481178558"/>
-										<File Id="842378591"/>
-										<File Id="498649797"/>
-										<File Id="577532029"/>
-										<File Id="667983349"/>
-										<File Id="76581843"/>
-										<File Id="866381090"/>
-										<File Id="421183266"/>
-										<File Id="791748590"/>
-										<File Id="178719157"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
+						<SwitchContainer SwitchValue="{9F51A0F3-2D08-4E34-BEEA-E17AA36AB810}">
+							<Media>
+								<File Id="218464251"/>
+								<File Id="481178558"/>
+								<File Id="842378591"/>
+								<File Id="498649797"/>
+								<File Id="577532029"/>
+								<File Id="667983349"/>
+								<File Id="76581843"/>
+								<File Id="866381090"/>
+								<File Id="421183266"/>
+								<File Id="791748590"/>
+								<File Id="178719157"/>
+							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{869F4E27-2297-43D0-9754-75BD70788E09}">
-							<Children>
-								<SwitchContainer SwitchValue="{6BB28AF0-099F-40B2-956A-C253AA5EAFDC}">
-									<Media>
-										<File Id="1073042269"/>
-										<File Id="471576877"/>
-										<File Id="872774364"/>
-										<File Id="842378591"/>
-										<File Id="218464251"/>
-										<File Id="481178558"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
+						<SwitchContainer SwitchValue="{6BB28AF0-099F-40B2-956A-C253AA5EAFDC}">
+							<Media>
+								<File Id="1073042269"/>
+								<File Id="471576877"/>
+								<File Id="872774364"/>
+								<File Id="842378591"/>
+								<File Id="218464251"/>
+								<File Id="481178558"/>
+							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{9C314D16-0C49-4638-A461-8FA3EECC35C2}">
-							<Children>
-								<SwitchContainer SwitchValue="{6BB28AF0-099F-40B2-956A-C253AA5EAFDC}">
-									<Media>
-										<File Id="728620653"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{9C314D16-0C49-4638-A461-8FA3EECC35C2}">
-							<Children/>
+						<SwitchContainer SwitchValue="{C69DBEA0-9601-43B1-B9A1-3CC1C3C72D55}">
+							<Media>
+								<File Id="728620653"/>
+							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry Id="1738206610" Name="NightTime" ObjectPath="\States\Default Work Unit\PlayerStatus\NightTime"/>
+					</ActionSetState>
 				</Event>
-				<Event Id="4073605608" Name="PlayerIsDead" ObjectPath="\Events\Default Work Unit\PlayerIsDead" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4073605608" Name="PlayerIsDead" ObjectPath="\Events\Default Work Unit\PlayerIsDead" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2044049779" Name="Dead" ObjectPath="\States\Default Work Unit\PlayerStatus\Dead"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2875365230" Name="StopMusicAndWater" ObjectPath="\Events\Default Work Unit\StopMusicAndWater" DurationType="OneShot" DurationMin="8.000000" DurationMax="8.000000">
+					<IncludedMemoryFiles>
+						<File Id="728620653" Language="SFX">
+							<ShortName>Death.wav</ShortName>
+							<Path>SFX/Death_834C3208.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="2044049779" Name="Dead" ObjectPath="\States\Default Work Unit\PlayerStatus\Dead"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="2654748154" Name="Water" ObjectPath="\Events\Default Work Unit\Water" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="658009416" Language="SFX">
@@ -162,17 +165,17 @@
 				<GameParameter Id="3223332851" Name="AmountOfWater" ObjectPath="\Game Parameters\Default Work Unit\AmountOfWater"/>
 			</GameParameters>
 			<StateGroups>
-				<StateGroup Id="3729505769" Name="TimeOfDay" ObjectPath="\States\Default Work Unit\TimeOfDay">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\TimeOfDay\None"/>
-						<State Id="4206605382" Name="DayTime" ObjectPath="\States\Default Work Unit\TimeOfDay\DayTime"/>
-						<State Id="1738206610" Name="NightTime" ObjectPath="\States\Default Work Unit\TimeOfDay\NightTime"/>
-					</States>
+				<StateGroup Id="1738206610" Name="NightTime" ObjectPath="\States\Default Work Unit\PlayerStatus\NightTime">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2044049779" Name="Dead" ObjectPath="\States\Default Work Unit\PlayerStatus\Dead">
+					<States/>
 				</StateGroup>
 				<StateGroup Id="3800848640" Name="PlayerStatus" ObjectPath="\States\Default Work Unit\PlayerStatus">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerStatus\None"/>
-						<State Id="655265632" Name="Alive" ObjectPath="\States\Default Work Unit\PlayerStatus\Alive"/>
+						<State Id="4206605382" Name="DayTime" ObjectPath="\States\Default Work Unit\PlayerStatus\DayTime"/>
+						<State Id="1738206610" Name="NightTime" ObjectPath="\States\Default Work Unit\PlayerStatus\NightTime"/>
 						<State Id="2044049779" Name="Dead" ObjectPath="\States\Default Work Unit\PlayerStatus\Dead"/>
 					</States>
 				</StateGroup>
