@@ -40,7 +40,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c14bdfeed3909144a4e7ffc9fb9cfae1
     GuidInternal: 
-    m_lastTime: -8586059417084775808
+    m_lastTime: -8586058618604775808
     List:
     - name: General
       guid: 8e8cca407ca4f2438a925027b36c4e58
@@ -65,7 +65,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5063aa135b1e0343b1aaad1e655eb1f4
     GuidInternal: 
-    m_lastTime: -8586059015224775808
+    m_lastTime: -8586058609054775808
     List:
     - name: Hit_Obstacle
       guid: e28864eebfa0a547a4929203f38b9f45
@@ -103,18 +103,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: StopMusic
+    - name: StopMusicAndWater
       guid: 42f319904ebab74bbde64a8072e4f46b
-      id: 1917263390
+      id: 2875365230
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: StopMusic
+      - ElementName: StopMusicAndWater
         ObjectType: 3
-      Path: Default Work Unit/StopMusic
+      Path: Default Work Unit/StopMusicAndWater
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 8
+      minDuration: 8
     - name: Water
       guid: 1695c64276ebb547899c27ce3a20c38b
       id: 2654748154
@@ -253,10 +253,10 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 9fc0bd155d8aea4099d7168386e8118f
     GuidInternal: 
-    m_lastTime: -8586060478354775808
+    m_lastTime: -8586058646144775808
     List:
     - name: PlayerStatus
-      guid: d9e186ef2dee3449bb74dd1bbb55b20b
+      guid: 4903aa337f4c57469eac148b652c4fe2
       id: 3800848640
       PathAndIcons:
       - ElementName: Default Work Unit
@@ -265,42 +265,17 @@ MonoBehaviour:
         ObjectType: 9
       Path: Default Work Unit/PlayerStatus
       values:
-      - name: Alive
-        guid: 274e9f869722d043975475bd70788e09
-        id: 655265632
-        PathAndIcons:
-        - ElementName: Alive
-          ObjectType: 8
-      - name: Dead
-        guid: 164d319c490c3846a4618fa3eecc35c2
-        id: 2044049779
-        PathAndIcons:
-        - ElementName: Dead
-          ObjectType: 8
-      - name: None
-        guid: 804a6f427471c2468fcfd25edcab7afa
-        id: 748895195
-        PathAndIcons:
-        - ElementName: None
-          ObjectType: 8
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
-    - name: TimeOfDay
-      guid: 4903aa337f4c57469eac148b652c4fe2
-      id: 3729505769
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: TimeOfDay
-        ObjectType: 9
-      Path: Default Work Unit/TimeOfDay
-      values:
       - name: DayTime
         guid: f3a0519f082d344ebeeae17aa36ab810
         id: 4206605382
         PathAndIcons:
         - ElementName: DayTime
+          ObjectType: 8
+      - name: Dead
+        guid: a0be9dc60196b143b9a13cc1c3c72d55
+        id: 2044049779
+        PathAndIcons:
+        - ElementName: Dead
           ObjectType: 8
       - name: NightTime
         guid: f08ab26b9f09b240956ac253aa5eafdc
@@ -322,7 +297,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 79aea8d535274e41966af22185345b84
     GuidInternal: 
-    m_lastTime: -8586060478354775808
+    m_lastTime: -8586058947824775808
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
@@ -333,7 +308,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Plumbing_WaterGame
-  - /Plumbing_WaterGame/Events
-  - /Plumbing_WaterGame/Events/Default Work Unit
+  - /Plumbing_WaterGame/States
+  - /Plumbing_WaterGame/States/Default Work Unit
+  - /Plumbing_WaterGame/States/Default Work Unit/PlayerStatus
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -1,23 +1,21 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1183362788	Hit_Obstacle			\Default Work Unit\Hit_Obstacle	
 	2654748154	Water			\Default Work Unit\Water	
+	2875365230	StopMusicAndWater			\Default Work Unit\StopMusicAndWater	
 	3991942870	Music			\Default Work Unit\Music	
 	4073605608	PlayerIsDead			\Default Work Unit\PlayerIsDead	
 
 State Group	ID	Name			Wwise Object Path	Notes
-	3729505769	TimeOfDay			\Default Work Unit\TimeOfDay	
 	3800848640	PlayerStatus			\Default Work Unit\PlayerStatus	
 
 State	ID	Name	State Group			Notes
-	748895195	None	TimeOfDay			
-	1738206610	NightTime	TimeOfDay			
-	4206605382	DayTime	TimeOfDay			
-	655265632	Alive	PlayerStatus			
 	748895195	None	PlayerStatus			
+	1738206610	NightTime	PlayerStatus			
 	2044049779	Dead	PlayerStatus			
+	4206605382	DayTime	PlayerStatus			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	576626211	Dead	PlayerStatus	\Actor-Mixer Hierarchy\Default Work Unit\Water		
+	103066408	Dead	PlayerStatus	\Actor-Mixer Hierarchy\Default Work Unit\Water		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1137641355	WaterSpeed			\Default Work Unit\WaterSpeed	
@@ -28,24 +26,24 @@ Effect plug-ins	ID	Name	Type				Notes
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	76581843	Voices	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Voices2_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\Voices		507066
-	178719157	PIano	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\PIano_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\PIano		373903
-	218464251	NightTime_Shimering2	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\NightTime_Shimering2_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\NightTime_Shimering2		447718
-	421183266	Guitar 1	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Guitar 1_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\Guitar 1		515871
-	471576877	NightTime_Fireflies	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\NightTime_Fireflies2_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\NightTime\NightTime1\NightTime_Fireflies		541746
-	481178558	NightTime_Shimering2	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\file0015-glued.wav.reapeaks_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\NightTime_Shimering2		468811
-	498649797	PlumbigGame_DayTime_Fireflies1	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\PlumbigGame_DayTime_Fireflies1_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\PlumbigGame_DayTime_Fireflies1		538630
-	577532029	PlumbigGame_DayTime_Fireflies1	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\PlumbigGame_DayTime_Fireflies2_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\PlumbigGame_DayTime_Fireflies1		540355
-	590244001	LoseWater2	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\LoseWater2_32819558.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hit_Obstacle\LoseWater2		50359
-	658009416	Water_1	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Water_1 _514D44AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Water\Water_1		339234
-	667983349	Voices	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Voices_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\Voices		489510
-	728620653	Death	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Death_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\Death\Death		150352
-	741864568	Water_3	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Water_3_77004ED1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Water\Water_3		869855
-	791748590	Guitar 1	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Guitar 2_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\Guitar 1		512731
-	842378591	PlumbigGame_LevelI-A_Kick	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Level I - A\PlumbigGame_LevelI-A_Kick_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\PlumbigGame_LevelI-A_Kick		109023
-	852683952	Water_2	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\Water_2_E6B54F6C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Water\Water_2		555691
-	866381090	FlowMOtion	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\FlowMOtion_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\FlowMOtion		526044
-	872774364	NightTime_Metals	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\NightTime_Metals_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\NightTime\NightTime1\NightTime_Metals		518674
-	1000543821	LoseWater1	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\LoseWater1_5699163B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hit_Obstacle\LoseWater1		49042
-	1073042269	NightTime_Fireflies	Y:\Documents\Spring_2020\Videogames\Watergame\Plumbing_WaterGame\.cache\Mac\SFX\NightTime_Fireflies_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\NightTime\NightTime1\NightTime_Fireflies		592042
+	76581843	Voices	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\Voices2_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\Voices		507066
+	178719157	PIano	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\PIano_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\PIano		373903
+	218464251	NightTime_Shimering2	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\NightTime_Shimering2_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\NightTime_Shimering2		447718
+	421183266	Guitar 1	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\Guitar 1_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\Guitar 1		515871
+	471576877	NightTime_Fireflies	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\NightTime_Fireflies2_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\NightTime\NightTime1\NightTime_Fireflies		541746
+	481178558	NightTime_Shimering2	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\file0015-glued.wav.reapeaks_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\NightTime_Shimering2		468811
+	498649797	PlumbigGame_DayTime_Fireflies1	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\PlumbigGame_DayTime_Fireflies1_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\PlumbigGame_DayTime_Fireflies1		538630
+	577532029	PlumbigGame_DayTime_Fireflies1	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\PlumbigGame_DayTime_Fireflies2_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\PlumbigGame_DayTime_Fireflies1		540355
+	590244001	LoseWater2	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\LoseWater2_32819558.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hit_Obstacle\LoseWater2		50359
+	658009416	Water_1	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\Water_1 _514D44AD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Water\Water_1		339234
+	667983349	Voices	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\Voices_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\Voices		489510
+	728620653	Death	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\Death_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\Death\Death		150352
+	741864568	Water_3	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\Water_3_77004ED1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Water\Water_3		869855
+	791748590	Guitar 1	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\Guitar 2_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\Guitar 1		512731
+	842378591	PlumbigGame_LevelI-A_Kick	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\Level I - A\PlumbigGame_LevelI-A_Kick_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\PlumbigGame_LevelI-A_Kick		109023
+	852683952	Water_2	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\Water_2_E6B54F6C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Water\Water_2		555691
+	866381090	FlowMOtion	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\FlowMOtion_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\DayTime\DayTime\FlowMOtion		526044
+	872774364	NightTime_Metals	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\NightTime_Metals_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\NightTime\NightTime1\NightTime_Metals		518674
+	1000543821	LoseWater1	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\LoseWater1_5699163B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hit_Obstacle\LoseWater1		49042
+	1073042269	NightTime_Fireflies	Y:\Documents\Spring_2020\Videogames\Watergame\WaterGameWwise\WaterGameWWise\Plumbing_WaterGame\.cache\Mac\SFX\NightTime_Fireflies_834C3208.wem		\Interactive Music Hierarchy\Default Work Unit\MusicLevels\NightTime\NightTime1\NightTime_Fireflies		592042
 

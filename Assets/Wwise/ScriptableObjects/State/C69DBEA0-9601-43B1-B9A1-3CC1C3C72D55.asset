@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68c9f5c64516b4da1b61bf2dbf1e045e, type: 3}
-  m_Name: 869F4E27-2297-43D0-9754-75BD70788E09
+  m_Name: C69DBEA0-9601-43B1-B9A1-3CC1C3C72D55
   m_EditorClassIdentifier: 
-  objectName: Alive
-  id: 655265632
-  guid: 869F4E27-2297-43D0-9754-75BD70788E09
-  WwiseStateGroupReference: {fileID: 11400000, guid: f7c1c6d07e4834464997175cd9a19685,
+  objectName: Dead
+  id: 2044049779
+  guid: C69DBEA0-9601-43B1-B9A1-3CC1C3C72D55
+  WwiseStateGroupReference: {fileID: 11400000, guid: 45deee26c25ab486d9e8f330b4749c49,
     type: 2}

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc1c2d725e4d84d66991b197e1b7c006, type: 3}
   m_Name: 33AA0349-4C7F-4657-9EAC-148B652C4FE2
   m_EditorClassIdentifier: 
-  objectName: TimeOfDay
-  id: 3729505769
+  objectName: PlayerStatus
+  id: 3800848640
   guid: 33AA0349-4C7F-4657-9EAC-148B652C4FE2

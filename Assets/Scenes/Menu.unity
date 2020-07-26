@@ -139,7 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a981422f000024da37fcd2c02596cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: {x: -0.5, y: 0}
+  initialMovement: {x: 3.5, y: 0, z: 0}
+  incrementPerFrame: {x: 0.05, y: 0, z: 0}
+  movement: {x: 5, y: 0, z: 0}
   stopTime: 4
   startTime: 0
 --- !u!1 &197475602
@@ -398,7 +400,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a981422f000024da37fcd2c02596cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: {x: 0, y: 0.75}
+  initialMovement: {x: 3.5, y: 0, z: 0}
+  incrementPerFrame: {x: 0.05, y: 0, z: 0}
+  movement: {x: 5, y: 0, z: 0}
   stopTime: 6
   startTime: 0
 --- !u!114 &444674137
@@ -413,7 +417,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a981422f000024da37fcd2c02596cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: {x: 0.6, y: 0}
+  initialMovement: {x: 3.5, y: 0, z: 0}
+  incrementPerFrame: {x: 0.05, y: 0, z: 0}
+  movement: {x: 5, y: 0, z: 0}
   stopTime: 2
   startTime: 7
 --- !u!114 &444674138
@@ -428,7 +434,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a981422f000024da37fcd2c02596cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: {x: 0, y: 0.5}
+  initialMovement: {x: 3.5, y: 0, z: 0}
+  incrementPerFrame: {x: 0.05, y: 0, z: 0}
+  movement: {x: 5, y: 0, z: 0}
   stopTime: 3
   startTime: 12
 --- !u!1 &505681196
@@ -576,9 +584,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loseUI: {fileID: 0}
-  movement: {fileID: 0}
+  cameraMovement: {fileID: 0}
+  backgroundMovement: {fileID: 0}
+  environmentGenMovement: {fileID: 0}
   metaballParent: {fileID: 231773075}
-  metaballManager: {fileID: 0}
+  waterDropper: {fileID: 0}
   mainMenu: 1
 --- !u!4 &608730778
 Transform:
@@ -1324,6 +1334,157 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1327974889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1327974893}
+  - component: {fileID: 1327974892}
+  - component: {fileID: 1327974891}
+  - component: {fileID: 1327974890}
+  - component: {fileID: 1327974895}
+  - component: {fileID: 1327974894}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1327974890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327974889}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 834901bf6032145429f1c8acde2dbb1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 54f3309a94962440eafd1339794214b9,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
+--- !u!114 &1327974891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327974889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e4de2c7eba63407b936bfbad7ca2196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1327974892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327974889}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f567a00e6c3f4345a520f8c45db0a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: e04152bbdba944c7da81a6f5fd5d5c4a,
+    type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  diffractionFlags: 11
+  engineLogging: 0
+--- !u!4 &1327974893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327974889}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1327974894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327974889}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e076cc5e2355341a69e7ee7d0bbfeca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 23a8cf1dd002841eea519f8c39654f27,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &1327974895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327974889}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b8942cdb55c415fb768233d3e66485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &1723590753
 PrefabInstance:
   m_ObjectHideFlags: 0
