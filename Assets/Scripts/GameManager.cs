@@ -29,9 +29,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void EndGame()
+    public void QuitGame()
     {
-
+        Application.Quit();
     }
 
     public void RestartGame()
