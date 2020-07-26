@@ -2013,6 +2013,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 1743df0754afb4aa986dfddb58ca1633,
       type: 2}
+  nonSpaceFly: 0
 --- !u!4 &1225612549
 Transform:
   m_ObjectHideFlags: 0
@@ -3689,6 +3690,8 @@ GameObject:
   - component: {fileID: 2071255894}
   - component: {fileID: 2071255893}
   - component: {fileID: 2071255897}
+  - component: {fileID: 2071255899}
+  - component: {fileID: 2071255898}
   m_Layer: 5
   m_Name: UI Overlay
   m_TagString: Untagged
@@ -3785,10 +3788,42 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071255892}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &2071255898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071255892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 869339a842402b54f967ad57c476e017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeUntilEnable: 3.2
+--- !u!95 &2071255899
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071255892}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3de8e25e84ef87e4784e2fdfef383b24, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2139024702
 GameObject:
   m_ObjectHideFlags: 0
