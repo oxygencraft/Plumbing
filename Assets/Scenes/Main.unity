@@ -3575,7 +3575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
-  speed: 0.15
+  speed: 0.006
   nightTimeEnd: 10
   nightTimeStart: 50
   resetTime: 65
