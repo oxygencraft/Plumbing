@@ -11,8 +11,10 @@ public class TimeCycle : MonoBehaviour
     public float resetTime = 70f;
     public float timeUntilStartCycle = 3.5f;
     public bool nightTime = true;
-
     private bool started = false;
+
+    [Header("Wwise")]
+    public AK.Wwise.RTPC TimeOfTheDayRTPC;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,8 @@ public class TimeCycle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        TimeOfTheDayRTPC.SetGlobalValue(time);
+
         if (!started)
             return;
         Vector3 position = transform.position; 

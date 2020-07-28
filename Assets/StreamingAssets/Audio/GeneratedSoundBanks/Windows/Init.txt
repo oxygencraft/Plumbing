@@ -1,3 +1,10 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	207908541	Time_of_day			\Default Work Unit\Time_of_day	
+
+Switch	ID	Name	Switch Group			Notes
+	311764537	Day	Time_of_day			
+	1011622525	Night	Time_of_day			
+
 State Group	ID	Name			Wwise Object Path	Notes
 	3800848640	PlayerStatus			\Default Work Unit\PlayerStatus	
 
@@ -9,6 +16,12 @@ State	ID	Name	State Group			Notes
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2310589475	Reverb_Abirds			\Default Work Unit\Master Audio Bus\Reverb_Abirds	
+
+Effect plug-ins	ID	Name	Type				Notes
+	48620415	Have_U_Ever_Been_Outside	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

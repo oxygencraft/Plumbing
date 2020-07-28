@@ -37,6 +37,21 @@ namespace AK
 
     } // namespace STATES
 
+    namespace SWITCHES
+    {
+        namespace TIME_OF_DAY
+        {
+            static const AkUniqueID GROUP = 207908541U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DAY = 311764537U;
+                static const AkUniqueID NIGHT = 1011622525U;
+            } // namespace SWITCH
+        } // namespace TIME_OF_DAY
+
+    } // namespace SWITCHES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID AMOUNTOFWATER = 3223332851U;
@@ -50,6 +65,7 @@ namespace AK
         static const AkUniqueID SS_AIR_STORM = 3715662592U;
         static const AkUniqueID SS_AIR_TIMEOFDAY = 3203397129U;
         static const AkUniqueID SS_AIR_TURBULENCE = 4160247818U;
+        static const AkUniqueID TIMEOFDAY = 3729505769U;
         static const AkUniqueID WATERSPEED = 1137641355U;
     } // namespace GAME_PARAMETERS
 
@@ -64,6 +80,11 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID REVERB_ABIRDS = 2310589475U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {
