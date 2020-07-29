@@ -1,3 +1,18 @@
+The code is licensed under GNU GPLv3
+The art is licensed under CC-BY-SA 4.0
+The music/sound is licensed under CC-BY-NC 4.0
+
+Code is any files in the GitHub repository except for those mentioned below
+
+Art is any files in in the Graphics folder of the Plumbing assets folder 
+and any files in Assets/Sprites except for the Plumbing logo and icon in the GitHub repository
+
+Music/sound is any files in Audio folder of the Plumbing assets folder or anything in 
+Assets/StreamingAssets/Audio/GeneratedSoundBanks in the GitHub repository
+
+Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) - https://creativecommons.org/licenses/by-sa/4.0/
+Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) - https://creativecommons.org/licenses/by-nc/4.0/
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
@@ -672,3 +687,4 @@ may consider it more useful to permit linking proprietary applications with
 the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 <https://www.gnu.org/licenses/why-not-lgpl.html>.
+
