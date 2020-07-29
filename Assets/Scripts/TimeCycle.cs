@@ -14,6 +14,9 @@ public class TimeCycle : MonoBehaviour
 
     private bool started = false;
 
+    [Header("Wwise")]
+    public AK.Wwise.RTPC TimeOfDayRTPC;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +31,7 @@ public class TimeCycle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        TimeOfDayRTPC.SetGlobalValue(time);
         if (!started)
             return;
         Vector3 position = transform.position; 

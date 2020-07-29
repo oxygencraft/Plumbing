@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68c9f5c64516b4da1b61bf2dbf1e045e, type: 3}
   m_Name: 9F51A0F3-2D08-4E34-BEEA-E17AA36AB810
   m_EditorClassIdentifier: 
-  objectName: DayTime
-  id: 4206605382
+  objectName: Alive
+  id: 655265632
   guid: 9F51A0F3-2D08-4E34-BEEA-E17AA36AB810
   WwiseStateGroupReference: {fileID: 11400000, guid: 45deee26c25ab486d9e8f330b4749c49,
     type: 2}

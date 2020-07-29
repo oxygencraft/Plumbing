@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 49d39753dddb24448135762733fbd3ff
     GuidInternal: 
-    m_lastTime: -8586066367044775808
+    m_lastTime: -8586056843204775808
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -35,6 +35,17 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
       Path: Default Work Unit/Master Audio Bus
+    - name: Reverb_Abirds
+      guid: 75263274a0a9ab47ba46c79265a2bc1f
+      id: 2310589475
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Reverb_Abirds
+        ObjectType: 1
+      Path: Default Work Unit/Master Audio Bus/Reverb_Abirds
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPath: Default Work Unit
@@ -65,7 +76,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 5063aa135b1e0343b1aaad1e655eb1f4
     GuidInternal: 
-    m_lastTime: -8586058609054775808
+    m_lastTime: -8586056850274775808
     List:
     - name: Hit_Obstacle
       guid: e28864eebfa0a547a4929203f38b9f45
@@ -101,8 +112,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/PlayerIsDead
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 8.02
+      minDuration: 8.02
     - name: StopMusicAndWater
       guid: 42f319904ebab74bbde64a8072e4f46b
       id: 2875365230
@@ -132,7 +143,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 0c7140943e3ee546954ef58c88dd01c9
     GuidInternal: 
-    m_lastTime: -8586060537424775808
+    m_lastTime: -8586056955114775808
     List:
     - name: AmountOfWater
       guid: 03f0ab8ccd4df0418ae3ffbeec3d24cc
@@ -143,6 +154,15 @@ MonoBehaviour:
       - ElementName: AmountOfWater
         ObjectType: 13
       Path: Default Work Unit/AmountOfWater
+    - name: TimeOfDay
+      guid: f5dc391c5e574e45a6ee0132cf8539eb
+      id: 3729505769
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TimeOfDay
+        ObjectType: 13
+      Path: Default Work Unit/TimeOfDay
     - name: WaterSpeed
       guid: 19ccc45fb0d33b4c804a229409e6a566
       id: 1137641355
@@ -253,7 +273,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 9fc0bd155d8aea4099d7168386e8118f
     GuidInternal: 
-    m_lastTime: -8586058646144775808
+    m_lastTime: -8586056561764775808
     List:
     - name: PlayerStatus
       guid: 4903aa337f4c57469eac148b652c4fe2
@@ -265,23 +285,17 @@ MonoBehaviour:
         ObjectType: 9
       Path: Default Work Unit/PlayerStatus
       values:
-      - name: DayTime
+      - name: Alive
         guid: f3a0519f082d344ebeeae17aa36ab810
-        id: 4206605382
+        id: 655265632
         PathAndIcons:
-        - ElementName: DayTime
+        - ElementName: Alive
           ObjectType: 8
       - name: Dead
         guid: a0be9dc60196b143b9a13cc1c3c72d55
         id: 2044049779
         PathAndIcons:
         - ElementName: Dead
-          ObjectType: 8
-      - name: NightTime
-        guid: f08ab26b9f09b240956ac253aa5eafdc
-        id: 1738206610
-        PathAndIcons:
-        - ElementName: NightTime
           ObjectType: 8
       - name: None
         guid: b2d19c2e264df643a26c2512ca84b705
@@ -297,8 +311,33 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 79aea8d535274e41966af22185345b84
     GuidInternal: 
-    m_lastTime: -8586058947824775808
-    List: []
+    m_lastTime: -8586056879604775808
+    List:
+    - name: Time_of_day
+      guid: aaae29a6ad0ccf419a82ed2372383597
+      id: 207908541
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Time_of_day
+        ObjectType: 11
+      Path: Default Work Unit/Time_of_day
+      values:
+      - name: Day
+        guid: 93ed5aeeb3b7b643b4bc25fa465f3b04
+        id: 311764537
+        PathAndIcons:
+        - ElementName: Day
+          ObjectType: 10
+      - name: Night
+        guid: 3f28c3f4b17272419254a033c452cbde
+        id: 1011622525
+        PathAndIcons:
+        - ElementName: Night
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers/Default Work Unit.wwu
     ParentPath: Default Work Unit

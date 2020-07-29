@@ -30,161 +30,107 @@
 				</Event>
 				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="76581843" Language="SFX">
-							<ShortName>Voices2.wav</ShortName>
-							<Path>SFX/Voices2_834C3208.wem</Path>
+						<File Id="128399067" Language="SFX">
+							<ShortName>DayTimeMusicLoop.wav</ShortName>
+							<Path>SFX/DayTimeMusicLoop_834C3208.wem</Path>
 						</File>
-						<File Id="178719157" Language="SFX">
-							<ShortName>PIano.wav</ShortName>
-							<Path>SFX/PIano_834C3208.wem</Path>
-						</File>
-						<File Id="218464251" Language="SFX">
-							<ShortName>NightTime_Shimering2.wav</ShortName>
-							<Path>SFX/NightTime_Shimering2_834C3208.wem</Path>
-						</File>
-						<File Id="421183266" Language="SFX">
-							<ShortName>Guitar 1.wav</ShortName>
-							<Path>SFX/Guitar 1_834C3208.wem</Path>
-						</File>
-						<File Id="471576877" Language="SFX">
-							<ShortName>NightTime_Fireflies2.wav</ShortName>
-							<Path>SFX/NightTime_Fireflies2_834C3208.wem</Path>
-						</File>
-						<File Id="481178558" Language="SFX">
-							<ShortName>file0015-glued.wav.reapeaks.wav</ShortName>
-							<Path>SFX/file0015-glued.wav.reapeaks_834C3208.wem</Path>
-						</File>
-						<File Id="498649797" Language="SFX">
-							<ShortName>PlumbigGame_DayTime_Fireflies1.wav</ShortName>
-							<Path>SFX/PlumbigGame_DayTime_Fireflies1_834C3208.wem</Path>
-						</File>
-						<File Id="577532029" Language="SFX">
-							<ShortName>PlumbigGame_DayTime_Fireflies2.wav</ShortName>
-							<Path>SFX/PlumbigGame_DayTime_Fireflies2_834C3208.wem</Path>
-						</File>
-						<File Id="667983349" Language="SFX">
-							<ShortName>Voices.wav</ShortName>
-							<Path>SFX/Voices_834C3208.wem</Path>
-						</File>
-						<File Id="728620653" Language="SFX">
-							<ShortName>Death.wav</ShortName>
-							<Path>SFX/Death_834C3208.wem</Path>
-						</File>
-						<File Id="791748590" Language="SFX">
-							<ShortName>Guitar 2.wav</ShortName>
-							<Path>SFX/Guitar 2_834C3208.wem</Path>
-						</File>
-						<File Id="842378591" Language="SFX">
-							<ShortName>Level I - A\PlumbigGame_LevelI-A_Kick.wav</ShortName>
-							<Path>SFX/Level I - A/PlumbigGame_LevelI-A_Kick_834C3208.wem</Path>
-						</File>
-						<File Id="866381090" Language="SFX">
-							<ShortName>FlowMOtion.wav</ShortName>
-							<Path>SFX/FlowMOtion_834C3208.wem</Path>
-						</File>
-						<File Id="872774364" Language="SFX">
-							<ShortName>NightTime_Metals.wav</ShortName>
-							<Path>SFX/NightTime_Metals_834C3208.wem</Path>
-						</File>
-						<File Id="1073042269" Language="SFX">
-							<ShortName>NightTime_Fireflies.wav</ShortName>
-							<Path>SFX/NightTime_Fireflies_834C3208.wem</Path>
+						<File Id="440114679" Language="SFX">
+							<ShortName>NightTimeMusicLoop.wav</ShortName>
+							<Path>SFX/NightTimeMusicLoop_834C3208.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{9F51A0F3-2D08-4E34-BEEA-E17AA36AB810}">
+						<SwitchContainer SwitchValue="{EE5AED93-B7B3-43B6-B4BC-25FA465F3B04}">
 							<Media>
-								<File Id="218464251"/>
-								<File Id="481178558"/>
-								<File Id="842378591"/>
-								<File Id="498649797"/>
-								<File Id="577532029"/>
-								<File Id="667983349"/>
-								<File Id="76581843"/>
-								<File Id="866381090"/>
-								<File Id="421183266"/>
-								<File Id="791748590"/>
-								<File Id="178719157"/>
+								<File Id="128399067"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{6BB28AF0-099F-40B2-956A-C253AA5EAFDC}">
+						<SwitchContainer SwitchValue="{F4C3283F-72B1-4172-9254-A033C452CBDE}">
 							<Media>
-								<File Id="1073042269"/>
-								<File Id="471576877"/>
-								<File Id="872774364"/>
-								<File Id="842378591"/>
-								<File Id="218464251"/>
-								<File Id="481178558"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{C69DBEA0-9601-43B1-B9A1-3CC1C3C72D55}">
-							<Media>
-								<File Id="728620653"/>
+								<File Id="440114679"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
-					<ActionSetState>
-						<ActionSetStateEntry Id="1738206610" Name="NightTime" ObjectPath="\States\Default Work Unit\PlayerStatus\NightTime"/>
-					</ActionSetState>
 				</Event>
-				<Event Id="4073605608" Name="PlayerIsDead" ObjectPath="\Events\Default Work Unit\PlayerIsDead" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="2044049779" Name="Dead" ObjectPath="\States\Default Work Unit\PlayerStatus\Dead"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="2875365230" Name="StopMusicAndWater" ObjectPath="\Events\Default Work Unit\StopMusicAndWater" DurationType="OneShot" DurationMin="8.000000" DurationMax="8.000000">
+				<Event Id="4073605608" Name="PlayerIsDead" ObjectPath="\Events\Default Work Unit\PlayerIsDead" DurationType="OneShot" DurationMin="8.020000" DurationMax="8.020000">
 					<IncludedMemoryFiles>
-						<File Id="728620653" Language="SFX">
-							<ShortName>Death.wav</ShortName>
-							<Path>SFX/Death_834C3208.wem</Path>
+						<File Id="50746271" Language="SFX">
+							<ShortName>Dead.wav</ShortName>
+							<Path>SFX/Dead_834C3208.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2875365230" Name="StopMusicAndWater" ObjectPath="\Events\Default Work Unit\StopMusicAndWater" DurationType="OneShot" DurationMin="8.000000" DurationMax="8.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="2044049779" Name="Dead" ObjectPath="\States\Default Work Unit\PlayerStatus\Dead"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2654748154" Name="Water" ObjectPath="\Events\Default Work Unit\Water" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="234757022" Language="SFX">
+							<ShortName>Forest Gain +0.0dB [74025a78].wav</ShortName>
+							<Path>SFX/Forest Gain +0.0dB [74025a78]_8C678DF7.wem</Path>
+						</File>
 						<File Id="658009416" Language="SFX">
 							<ShortName>Water_1 .wav</ShortName>
 							<Path>SFX/Water_1 _514D44AD.wem</Path>
+						</File>
+						<File Id="720994275" Language="SFX">
+							<ShortName>Efectos 202_River and Birds Trimmed (973148-3119008) Gain +0.0dB [d25e8075].wav</ShortName>
+							<Path>SFX/Efectos 202_River and Birds Trimmed (973148-3119008) Gain +0.0dB [d25e8075]_C359ACD1.wem</Path>
 						</File>
 						<File Id="741864568" Language="SFX">
 							<ShortName>Water_3.wav</ShortName>
 							<Path>SFX/Water_3_77004ED1.wem</Path>
 						</File>
+						<File Id="843080717" Language="SFX">
+							<ShortName>045_AMB_External_Rwanda_Night_CricketsT Gain +0.0dB [ad1e4f3a].wav</ShortName>
+							<Path>SFX/045_AMB_External_Rwanda_Night_CricketsT Gain +0.0dB [ad1e4f3a]_5468C7A1.wem</Path>
+						</File>
+						<File Id="843197024" Language="SFX">
+							<ShortName>China, Exterior, Atmosphere, Birds, Trees, No Traffic Trimmed (0-1264061) Gain +0.0dB [235e899d].wav</ShortName>
+							<Path>SFX/China, Exterior, Atmosphere, Birds, Trees, No Traffic Trimmed (0-1264061) Gain +0.0dB [235e899d]_25E8C928.wem</Path>
+						</File>
 						<File Id="852683952" Language="SFX">
 							<ShortName>Water_2.wav</ShortName>
 							<Path>SFX/Water_2_E6B54F6C.wem</Path>
 						</File>
+						<File Id="958862463" Language="SFX">
+							<ShortName>Forest Evening Gain +0.0dB [8f00c4c0].wav</ShortName>
+							<Path>SFX/Forest Evening Gain +0.0dB [8f00c4c0]_2453DE50.wem</Path>
+						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2310589475" Name="Reverb_Abirds" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Abirds"/>
+					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="1137641355" Name="WaterSpeed" ObjectPath="\Game Parameters\Default Work Unit\WaterSpeed"/>
 				<GameParameter Id="3223332851" Name="AmountOfWater" ObjectPath="\Game Parameters\Default Work Unit\AmountOfWater"/>
+				<GameParameter Id="3729505769" Name="TimeOfDay" ObjectPath="\Game Parameters\Default Work Unit\TimeOfDay"/>
 			</GameParameters>
 			<StateGroups>
-				<StateGroup Id="1738206610" Name="NightTime" ObjectPath="\States\Default Work Unit\PlayerStatus\NightTime">
-					<States/>
-				</StateGroup>
 				<StateGroup Id="2044049779" Name="Dead" ObjectPath="\States\Default Work Unit\PlayerStatus\Dead">
 					<States/>
 				</StateGroup>
-				<StateGroup Id="3800848640" Name="PlayerStatus" ObjectPath="\States\Default Work Unit\PlayerStatus">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PlayerStatus\None"/>
-						<State Id="4206605382" Name="DayTime" ObjectPath="\States\Default Work Unit\PlayerStatus\DayTime"/>
-						<State Id="1738206610" Name="NightTime" ObjectPath="\States\Default Work Unit\PlayerStatus\NightTime"/>
-						<State Id="2044049779" Name="Dead" ObjectPath="\States\Default Work Unit\PlayerStatus\Dead"/>
-					</States>
-				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="207908541" Name="Time_of_day" ObjectPath="\Switches\Default Work Unit\Time_of_day">
+					<Switches>
+						<Switch Id="311764537" Name="Day" ObjectPath="\Switches\Default Work Unit\Time_of_day\Day"/>
+						<Switch Id="1011622525" Name="Night" ObjectPath="\Switches\Default Work Unit\Time_of_day\Night"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="2310589475" Name="Reverb_Abirds" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Abirds"/>
+			</IncludedAuxBusses>
 		</SoundBank>
 		<SoundBank Id="3991942870" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
