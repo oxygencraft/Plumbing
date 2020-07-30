@@ -151,12 +151,14 @@ public class MetaballManager : MonoBehaviour
 
     public void OnFly(InputAction.CallbackContext context)
     {
+        if (!control)
+            return;
         float value = context.ReadValue<float>();
         if (value == 1f && !isHoldingSpace)
         {
             nonSpaceFly = true;
         }
-        Debug.Log("Non space fly: " + nonSpaceFly);
+        //Debug.Log("Non space fly: " + nonSpaceFly);
         if (value == -1f && nonSpaceFly)
             return;
         if (context.canceled && nonSpaceFly)
