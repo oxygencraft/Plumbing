@@ -21,6 +21,7 @@ public class ObstacleProjectile : MonoBehaviour
             direction.y *= -1; 
         //Debug.Log(direction, gameObject);
         rigidbody.velocity = direction;
+        rigidbody.angularVelocity = Random.Range(-250f, 250f);
     }
 
     void FixedUpdate()
