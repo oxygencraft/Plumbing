@@ -19,4 +19,5 @@ Making the water fly.
 
 You can destroy parts of the environment to help you but you have destruction heat. While you are destroying the environment, you are gaining destruction heat. The more destruction heat you have, the slower you will destroy the environment. When you reach max destruction heat, you will have to wait until destruction heat cools down completely before you can destroy the environment again. 
 
+(NOT IMPLEMENTED AND MIGHT BE REMOVED)
 You also have a destruction limit which counts the amount environment you have destroyed within a certain timeframe. When the maximum is reached, you cannot destroy the environment until the destruction limit resets. The environment destruction limit reset time is 30 seconds. When you stop destroying the environment, the timer of 30 seconds start. After those 30 seconds have past, the destruction limit will reset back to 0. If you destroy the environment again within that 30 second timer, the timer will reset and you will have to wait 30 seconds again after you stop destroying again for the destruction limit to reset.
