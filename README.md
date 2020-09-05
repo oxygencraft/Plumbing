@@ -2,6 +2,8 @@
 
 A game made in Unity where you need to keep the water moving and avoid obstacles
 
+Itch.io page: https://oxygencraft.itch.io/plumbing
+
 The game was made for the jam My First Game Jam Summer 2020 https://itch.io/jam/my-first-game-jam-summer-2020
 
 # Game Info
